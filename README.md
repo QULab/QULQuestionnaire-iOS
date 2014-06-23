@@ -103,6 +103,19 @@ QULQuestionnaire provides a drop-in solution for presenting an in-app questionna
 }
 ```
 
+#Installation
+
+##Manual
+
+Copy all files from the QULQuestionnare folder to your project.
+
+## CocoaPods
+
+```ruby
+platform :ios, '7.0'
+pod "QULQuestionnaire", "~> 0.1"
+```
+
 #Requirements
 * iOS7 (will work on iOS6 without RMStepsController)
 * ARC
