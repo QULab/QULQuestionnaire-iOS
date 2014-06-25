@@ -148,6 +148,13 @@
                                                                                 views:NSDictionaryOfVariableBindings(instructionLabel,
                                                                                                                      button)]];
         } else {
+            if (i == [smileys count] - 1) {
+                [scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[button]-|"
+                                                                                   options:0
+                                                                                   metrics:nil
+                                                                                     views:NSDictionaryOfVariableBindings(button)]];
+            }
+            
             [scrollView addConstraint:[NSLayoutConstraint constraintWithItem:button
                                                                    attribute:NSLayoutAttributeCenterY
                                                                    relatedBy:NSLayoutRelationEqual

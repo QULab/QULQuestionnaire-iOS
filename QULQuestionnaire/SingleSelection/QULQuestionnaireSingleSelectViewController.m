@@ -182,6 +182,11 @@
                                                                                   options:0
                                                                                   metrics:nil
                                                                                     views:NSDictionaryOfVariableBindings(instructionLabel,button)]];
+            } else if (i == [self.questionnaireData[@"options"] count] - 1) {
+                [scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[label]-|"
+                                                                                   options:0
+                                                                                   metrics:nil
+                                                                                     views:NSDictionaryOfVariableBindings(label)]];
             }
             
             NSString *format = (i == 0) ? @"H:|-[button]" : @"H:[previousElement]-[button]";
