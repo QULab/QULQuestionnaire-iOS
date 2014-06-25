@@ -147,6 +147,16 @@
                                                           attribute:NSLayoutAttributeCenterX
                                                          multiplier:1.0
                                                            constant:0]];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWillShow:)
+                                                 name:UIKeyboardWillShowNotification
+                                               object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWillHide:)
+                                                 name:UIKeyboardWillHideNotification
+                                               object:nil];
 }
 
 - (void)proceed {
@@ -158,7 +168,7 @@
 }
 
 
-#pragma mark UITextView delegate
+#pragma mark - UITextView delegate
 - (void)textViewDidBeginEditing:(UITextView *)textView {
     if ([textView.text isEqualToString:self.questionnaireData[@"placeholder"]]) {
         textView.text = @"";
@@ -179,6 +189,34 @@
     if (!self.nextButton.enabled) {
         self.nextButton.enabled = YES;
     }
+}
+
+#pragma mark - UIKeyboard show / hide
+- (void)keyboardWillShow:(NSNotification *)notification {
+    NSDictionary *info = [notification userInfo];
+    CGRect keyboardRect = [info[UIKeyboardFrameBeginUserInfoKey] CGRectValue];
+    keyboardRect = [self.view convertRect:keyboardRect fromView:nil];
+    
+    UIEdgeInsets contentInsets = UIEdgeInsetsMake(0.0,
+                                                  0.0,
+                                                  keyboardRect.size.height - self.stepsController.stepsBar.frame.size.height + 10,
+                                                  0.0);
+    UIScrollView *scrollView = [[self.view subviews] firstObject];
+    scrollView.contentInset = contentInsets;
+    scrollView.scrollIndicatorInsets = contentInsets;
+    
+    CGRect viewRect = self.view.frame;
+    viewRect.size.height -= keyboardRect.size.height;
+    if (!CGRectContainsPoint(viewRect, self.textView.frame.origin) ) {
+        [scrollView scrollRectToVisible:self.textView.frame animated:YES];
+    }
+}
+
+- (void)keyboardWillHide:(NSNotification *)notification {
+    UIEdgeInsets contentInsets = UIEdgeInsetsZero;
+    UIScrollView *scrollView = [[self.view subviews] firstObject];
+    scrollView.contentInset = contentInsets;
+    scrollView.scrollIndicatorInsets = contentInsets;
 }
 
 @end
