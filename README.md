@@ -1,5 +1,9 @@
 # QULQuestionnaire-iOS
 
+[![Pod Version](http://img.shields.io/cocoapods/v/QULQuestionnaire.svg?style=flat)](http://cocoadocs.org/docsets/QULQuestionnaire/)
+[![Pod Platform](http://img.shields.io/cocoapods/p/QULQuestionnaire.svg?style=flat)](http://cocoadocs.org/docsets/QULQuestionnaire/)
+[![Pod License](http://img.shields.io/cocoapods/l/QULQuestionnaire.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0.html)
+
 QULQuestionnaire provides a drop-in solution for presenting an in-app questionnaire to the user. It may fetch questionnaire data from a remote server and build the questionnaire at runtime with the following options:
 
 
@@ -125,4 +129,4 @@ pod "QULQuestionnaire", "~> 0.1"
 
 #License
 
-QULQuestionnaire-iOS is licensed under the terms of the Apache License, version 2.0. Please see the [LICENSE](https://github.com/QULab/QULQuestionnaire-iOS/blob/master/LICENSE) file for full details.
+QULQuestionnaire-iOS is licensed under the terms of the [Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html). Please see the [LICENSE](LICENSE) file for full details.
