@@ -120,5 +120,9 @@ pod "QULQuestionnaire", "~> 0.1"
 * iOS7 (will work on iOS6 without RMStepsController)
 * ARC
 
-##Dependencies
+#Dependencies
 * https://github.com/CooperRS/RMStepsController
+
+#License
+
+QULQuestionnaire-iOS is licensed under the terms of the Apache License, version 2.0. Please see the [LICENSE](https://github.com/QULab/QULQuestionnaire-iOS/blob/master/LICENSE) file for full details.
