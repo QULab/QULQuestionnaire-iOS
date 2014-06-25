@@ -51,7 +51,8 @@
 {
     [super viewDidLoad];
     
-    if([self.questionnaireData[@"orientation"] integerValue] == QULQuestionnaireSingleSelectOrientationHorizontal) {
+    if(([self.questionnaireData[@"orientation"] integerValue] == QULQuestionnaireSingleSelectOrientationHorizontal) &&
+       (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)) {
         NSAssert1([self.questionnaireData[@"options"] count] <= 7,
                   @"Due to layout constraints in portrait mode, the maximum number of options is 7 (%d provided).",
                   [self.questionnaireData[@"options"] count]);
