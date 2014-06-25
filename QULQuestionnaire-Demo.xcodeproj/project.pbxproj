@@ -538,6 +538,7 @@
 				INFOPLIST_FILE = "QULQuestionnaire-Demo/QULQuestionnaire-Demo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "QULQuestionnaire-Demo";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -557,6 +558,7 @@
 				INFOPLIST_FILE = "QULQuestionnaire-Demo/QULQuestionnaire-Demo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "QULQuestionnaire-Demo";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
