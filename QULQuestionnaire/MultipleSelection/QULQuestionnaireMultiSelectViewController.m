@@ -200,6 +200,13 @@
                                                            constant:0]];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    UIScrollView *scrollView = [[self.view subviews] firstObject];
+    [scrollView flashScrollIndicators];
+}
+
 - (void)proceed {
     NSMutableDictionary *result = [@{} mutableCopy];
     result[@"question"] = self.questionnaireData[@"key"];

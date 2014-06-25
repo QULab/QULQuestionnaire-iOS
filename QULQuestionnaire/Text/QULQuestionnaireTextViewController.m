@@ -159,6 +159,13 @@
                                                object:nil];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    UIScrollView *scrollView = [[self.view subviews] firstObject];
+    [scrollView flashScrollIndicators];
+}
+
 - (void)proceed {
     NSDictionary *result = @{@"question": self.questionnaireData[@"key"],
                              @"answer": self.textView.text};
