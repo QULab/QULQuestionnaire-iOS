@@ -29,6 +29,8 @@ QULQuestionnaire provides a drop-in solution for presenting an in-app questionna
   ]
 }
 ```
+![Single selection vertical](QULQuestionnaire-Demo/Screenshots/SingleSelectionVertical.png)
+![Single selection horizontal](QULQuestionnaire-Demo/Screenshots/SingleSelectionHorizontal.png)
 
 ###Overall rating (smiley scale)
 ```json
@@ -40,6 +42,7 @@ QULQuestionnaire provides a drop-in solution for presenting an in-app questionna
   "required": BOOL
 }
 ```
+![Smiley](QULQuestionnaire-Demo/Screenshots/Smiley.png)
 
 ###Multiple selection (checkbox)
 ```json
@@ -76,8 +79,9 @@ QULQuestionnaire provides a drop-in solution for presenting an in-app questionna
   "stepValue": INT // optional
 }
 ```
+![Slider](QULQuestionnaire-Demo/Screenshots/Slider.png)
 
-###Value from range (slider)
+###Text
 ```json
 {
   "key": STRING,
@@ -88,6 +92,7 @@ QULQuestionnaire provides a drop-in solution for presenting an in-app questionna
   "required": BOOL
 }
 ```
+![Single selection vertical](QULQuestionnaire-Demo/Screenshots/Text.png)
 
 ###Ranking
 ```json
@@ -106,6 +111,7 @@ QULQuestionnaire provides a drop-in solution for presenting an in-app questionna
   ]
 }
 ```
+![Ranking](QULQuestionnaire-Demo/Screenshots/Ranking.png)
 
 #Installation
 
