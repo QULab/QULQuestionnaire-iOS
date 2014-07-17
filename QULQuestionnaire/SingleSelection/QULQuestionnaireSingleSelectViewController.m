@@ -23,10 +23,13 @@
 #import "RMStepsController.h"
 #import "NSMutableArray+Shuffle.h"
 
-@interface QULQuestionnaireSingleSelectViewController ()
+static const NSInteger otherOption = -1;
+
+@interface QULQuestionnaireSingleSelectViewController () <UITextFieldDelegate>
 
 @property (strong, nonatomic) UIButton *nextButton;
 @property (strong, nonatomic) NSMutableArray *buttons;
+@property (strong, nonatomic) UITextField *textField;
 
 @end
 
@@ -214,7 +217,7 @@
             if (i == 0) {
                 format = @"V:[previousElement]-(45)-[button]";
             } else if (i == [self.questionnaireData[@"options"] count]-1) {
-                format = @"V:[previousElement]-[button]|";
+                format = @"V:[previousElement]-[button]";
             } else {
                 format = @"V:[previousElement]-[button]";
             }
@@ -233,6 +236,64 @@
         i++;
     }
     
+    if ([self.questionnaireData[@"other"] boolValue] &&
+        [self.questionnaireData[@"orientation"] integerValue] == QULQuestionnaireSingleSelectOrientationVertical) {
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        button.translatesAutoresizingMaskIntoConstraints = NO;
+        [button setImage:radioOff forState:UIControlStateNormal];
+        [button setImage:radioOn forState:UIControlStateSelected];
+        button.tag = otherOption;
+        [button addTarget:self
+                   action:@selector(didSelectButton:)
+         forControlEvents:UIControlEventTouchUpInside];
+        [self.buttons addObject:button];
+        [scrollView addSubview:button];
+        
+        UITextField *textField = [[UITextField alloc] init];
+        textField.tag = otherOption;
+        textField.delegate = self;
+        textField.translatesAutoresizingMaskIntoConstraints = NO;
+        textField.placeholder = NSLocalizedString(@"Other", nil);
+        self.textField = textField;
+        
+        UIToolbar *toolbar = [[UIToolbar alloc] init];
+        [toolbar sizeToFit];
+        UIBarButtonItem *doneButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone
+                                                                                        target:textField
+                                                                                        action:@selector(resignFirstResponder)];
+        doneButtonItem.enabled = YES;
+        UIBarButtonItem *flexibleSpaceButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
+                                                                                                 target:nil
+                                                                                                 action:nil];
+        toolbar.items = @[flexibleSpaceButtonItem,doneButtonItem];
+        [textField setInputAccessoryView:toolbar];
+        [scrollView addSubview:textField];
+        
+        [scrollView addConstraint:[NSLayoutConstraint constraintWithItem:button
+                                                               attribute:NSLayoutAttributeWidth
+                                                               relatedBy:NSLayoutRelationEqual
+                                                                  toItem:nil
+                                                               attribute:NSLayoutAttributeNotAnAttribute
+                                                              multiplier:1.0
+                                                                constant:33.0]];
+        [scrollView addConstraint:[NSLayoutConstraint constraintWithItem:button
+                                                               attribute:NSLayoutAttributeHeight
+                                                               relatedBy:NSLayoutRelationEqual
+                                                                  toItem:nil
+                                                               attribute:NSLayoutAttributeNotAnAttribute
+                                                              multiplier:1.0
+                                                                constant:33.0]];
+        [scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[previousElement]-[button]|"
+                                                                           options:NSLayoutFormatAlignAllLeading
+                                                                           metrics:nil
+                                                                             views:NSDictionaryOfVariableBindings(previousElement,button)]];
+        [scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[button]-[textField]-|"
+                                                                           options:NSLayoutFormatAlignAllCenterY
+                                                                           metrics:nil
+                                                                             views:NSDictionaryOfVariableBindings(button,textField)]];
+    
+    }
+    
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:scrollView
                                                           attribute:NSLayoutAttributeCenterX
                                                           relatedBy:NSLayoutRelationEqual
@@ -240,6 +301,16 @@
                                                           attribute:NSLayoutAttributeCenterX
                                                          multiplier:1.0
                                                            constant:0]];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWillShow:)
+                                                 name:UIKeyboardWillShowNotification
+                                               object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWillHide:)
+                                                 name:UIKeyboardWillHideNotification
+                                               object:nil];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -255,8 +326,12 @@
     
     [self.buttons enumerateObjectsUsingBlock:^(UIButton *button, NSUInteger idx, BOOL *stop) {
         if (button.selected) {
-            NSDictionary *option = self.questionnaireData[@"options"][button.tag];
-            result[@"answer"] = option[@"key"];
+            if (button.tag == otherOption) {
+                result[@"answer"] = self.textField.text;
+            } else {
+                NSDictionary *option = self.questionnaireData[@"options"][button.tag];
+                result[@"answer"] = option[@"key"];
+            }
             
             *stop = YES;
         }
@@ -275,6 +350,47 @@
     for (UIButton *button in self.buttons) {
         button.selected = (button == selected);
     }
+    
+    if (selected.tag == otherOption &&  self.textField) {
+        [self.textField becomeFirstResponder];
+    }
 }
+
+#pragma mark - UITextField delegate
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    if ([[self.view viewWithTag:textField.tag] isKindOfClass:[UIButton class]]) {
+        UIButton *button = (UIButton *)[self.view viewWithTag:textField.tag];
+        [self didSelectButton:button];
+    }
+}
+
+#pragma mark - UIKeyboard show / hide
+- (void)keyboardWillShow:(NSNotification *)notification {
+    NSDictionary *info = [notification userInfo];
+    CGRect keyboardRect = [info[UIKeyboardFrameBeginUserInfoKey] CGRectValue];
+    keyboardRect = [self.view convertRect:keyboardRect fromView:nil];
+    
+    UIEdgeInsets contentInsets = UIEdgeInsetsMake(0.0,
+                                                  0.0,
+                                                  keyboardRect.size.height - self.stepsController.stepsBar.frame.size.height + 15,
+                                                  0.0);
+    UIScrollView *scrollView = [[self.view subviews] firstObject];
+    scrollView.contentInset = contentInsets;
+    scrollView.scrollIndicatorInsets = contentInsets;
+    
+    CGRect viewRect = self.view.frame;
+    viewRect.size.height -= keyboardRect.size.height;
+    if (!CGRectContainsPoint(viewRect, self.textField.frame.origin) ) {
+        [scrollView scrollRectToVisible:self.textField.frame animated:YES];
+    }
+}
+
+- (void)keyboardWillHide:(NSNotification *)notification {
+    UIEdgeInsets contentInsets = UIEdgeInsetsZero;
+    UIScrollView *scrollView = [[self.view subviews] firstObject];
+    scrollView.contentInset = contentInsets;
+    scrollView.scrollIndicatorInsets = contentInsets;
+}
+
 
 @end

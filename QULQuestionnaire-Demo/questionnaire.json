@@ -13,6 +13,7 @@
         "instruction": "Please select one option.",
         "required": true,
         "randomized": true,
+        "other": true,
         "options": [
             {
                 "key": "r1",
