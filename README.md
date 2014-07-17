@@ -77,6 +77,7 @@ QULQuestionnaire provides a drop-in solution for presenting an in-app questionna
   "maxValue": FLOAT,
   "minLabel": STRING,
   "maxLabel": STRING,
+  "showSelectedValue": BOOL, // optional
   "stepValue": INT // optional
 }
 ```
