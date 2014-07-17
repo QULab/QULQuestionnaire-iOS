@@ -20,6 +20,7 @@ QULQuestionnaire provides a drop-in solution for presenting an in-app questionna
   "instruction": STRING,
   "required": BOOL,
   "randomized": BOOL,
+  "other": BOOL // optional; only available in vertical orientation
   "options": [
     {
       "key": STRING,
