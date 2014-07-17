@@ -26,6 +26,7 @@
 
 @property (strong, nonatomic) UIButton *nextButton;
 @property (strong, nonatomic) UISlider *slider;
+@property (strong, nonatomic) UILabel *selectedValueLabel;
 
 @end
 
@@ -85,6 +86,13 @@
     maxLabel.text = self.questionnaireData[@"maxLabel"];
     [self.view addSubview:maxLabel];
     
+    UILabel *selectedValueLabel = [[UILabel alloc] init];
+    selectedValueLabel.translatesAutoresizingMaskIntoConstraints = NO;
+    selectedValueLabel.text = @"";
+    selectedValueLabel.hidden = ![self.questionnaireData[@"showSelectedValue"] boolValue];
+    self.selectedValueLabel = selectedValueLabel;
+    [self.view addSubview:self.selectedValueLabel];
+    
     UIButton *nextButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [nextButton setTitle:@"Next" forState:UIControlStateNormal];
     nextButton.translatesAutoresizingMaskIntoConstraints = NO;
@@ -100,6 +108,7 @@
                                                          slider,
                                                          minLabel,
                                                          maxLabel,
+                                                         selectedValueLabel,
                                                          nextButton);
     
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[questionLabel]-[instructionLabel]-(45)-[slider]-[minLabel]"
@@ -122,7 +131,7 @@
                                                                       options:0
                                                                       metrics:nil
                                                                         views:views]];
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[minLabel]-[maxLabel]-|"
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[minLabel]-(>=8)-[selectedValueLabel]-(>=8)-[maxLabel]-|"
                                                                       options:0
                                                                       metrics:nil
                                                                         views:views]];
@@ -133,10 +142,24 @@
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:minLabel
                                                           attribute:NSLayoutAttributeBaseline
                                                           relatedBy:NSLayoutRelationEqual
+                                                             toItem:selectedValueLabel
+                                                          attribute:NSLayoutAttributeBaseline
+                                                         multiplier:1.0
+                                                           constant:0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:selectedValueLabel
+                                                          attribute:NSLayoutAttributeBaseline
+                                                          relatedBy:NSLayoutRelationEqual
                                                              toItem:maxLabel
                                                           attribute:NSLayoutAttributeBaseline
                                                          multiplier:1.0
                                                            constant:0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:selectedValueLabel
+                                                          attribute:NSLayoutAttributeCenterX
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeCenterX
+                                                         multiplier:1.0
+                                                           constant:0.0]];
 }
 
 - (void)proceed {
@@ -154,6 +177,8 @@
         float newStep = roundf((slider.value) / stepValue);
         slider.value = newStep * stepValue;
     }
+    
+    self.selectedValueLabel.text = [NSString stringWithFormat:@"%.1f",slider.value];
     
     if (!self.nextButton.enabled) {
         self.nextButton.enabled = YES;
