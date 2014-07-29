@@ -73,6 +73,7 @@
     textView.translatesAutoresizingMaskIntoConstraints = NO;
     textView.delegate = self;
     textView.scrollEnabled = NO;
+    textView.keyboardType = [self keyboardTypeForInput:self.questionnaireData[@"input"]];
     textView.text = self.questionnaireData[@"placeholder"];
     textView.layer.backgroundColor = [[UIColor whiteColor] CGColor];
     textView.layer.borderColor = [[UIColor lightGrayColor] CGColor];
@@ -224,6 +225,25 @@
     UIScrollView *scrollView = [[self.view subviews] firstObject];
     scrollView.contentInset = contentInsets;
     scrollView.scrollIndicatorInsets = contentInsets;
+}
+
+- (UIKeyboardType)keyboardTypeForInput:(NSString *)input {
+    if (!input) {
+        return UIKeyboardTypeDefault;
+    }
+    
+    UIKeyboardType type;
+    if ([input isEqualToString:@"text"]) {
+        type = UIKeyboardTypeDefault;
+    } else if ([input isEqualToString:@"number"]) {
+        type = UIKeyboardTypeNumberPad;
+    } else if ([input isEqualToString:@"email"]) {
+        type = UIKeyboardTypeEmailAddress;
+    } else {
+        type = UIKeyboardTypeDefault;
+    }
+    
+    return type;
 }
 
 @end
