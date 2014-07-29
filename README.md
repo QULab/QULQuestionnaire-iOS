@@ -89,6 +89,7 @@ QULQuestionnaire provides a drop-in solution for presenting an in-app questionna
   "key": STRING,
   "type": "text",
   "question": STRING,
+  "input": STRING ("text" | "number" | "email") , // optional, defaults to text
   "instruction": STRING,
   "placeholder": STRING,
   "required": BOOL
