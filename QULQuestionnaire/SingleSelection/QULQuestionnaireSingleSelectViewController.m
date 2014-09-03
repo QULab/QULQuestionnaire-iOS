@@ -192,12 +192,25 @@ static const NSInteger otherOption = -1;
                                                                                      views:NSDictionaryOfVariableBindings(label)]];
             }
             
-            NSString *format = (i == 0) ? @"H:|-[button]" : @"H:[previousElement]-[button]";
+            if (i > 0) {
+                [scrollView addConstraint:[NSLayoutConstraint constraintWithItem:button
+                                                                       attribute:NSLayoutAttributeCenterY
+                                                                       relatedBy:NSLayoutRelationEqual
+                                                                          toItem:previousElement
+                                                                       attribute:NSLayoutAttributeCenterY
+                                                                      multiplier:1.0f
+                                                                        constant:0.0f]];
+            }
             
-            [scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:format
-                                                                              options:NSLayoutFormatAlignAllCenterY
-                                                                              metrics:nil
-                                                                                views:NSDictionaryOfVariableBindings(previousElement,button)]];
+            CGFloat multiplier = (2*i + 2) / (CGFloat)([self.questionnaireData[@"options"] count] + 1);
+            [scrollView addConstraint:[NSLayoutConstraint constraintWithItem:button
+                                                                   attribute:NSLayoutAttributeCenterX
+                                                                   relatedBy:NSLayoutRelationEqual
+                                                                      toItem:scrollView
+                                                                   attribute:NSLayoutAttributeCenterX
+                                                                  multiplier:multiplier
+                                                                    constant:0]];
+            
             [scrollView addConstraint:[NSLayoutConstraint constraintWithItem:button
                                                                   attribute:NSLayoutAttributeBottom
                                                                   relatedBy:NSLayoutRelationEqual
