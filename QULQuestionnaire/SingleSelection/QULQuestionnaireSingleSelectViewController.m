@@ -185,11 +185,55 @@ static const NSInteger otherOption = -1;
                                                                                   options:0
                                                                                   metrics:nil
                                                                                     views:NSDictionaryOfVariableBindings(instructionLabel,button)]];
+                
+                if ([self.questionnaireData objectForKey:@"minLabel"]) {
+                    UILabel *minLabel = [[UILabel alloc] init];
+                    minLabel.translatesAutoresizingMaskIntoConstraints = NO;
+                    minLabel.text = self.questionnaireData[@"minLabel"];
+                    [scrollView addSubview:minLabel];
+                    
+                    [scrollView addConstraint:[NSLayoutConstraint constraintWithItem:label
+                                                                           attribute:NSLayoutAttributeBottom
+                                                                           relatedBy:NSLayoutRelationEqual
+                                                                              toItem:minLabel
+                                                                           attribute:NSLayoutAttributeTop
+                                                                          multiplier:1.0
+                                                                            constant:0]];
+                    [scrollView addConstraint:[NSLayoutConstraint constraintWithItem:button
+                                                                           attribute:NSLayoutAttributeLeft
+                                                                           relatedBy:NSLayoutRelationEqual
+                                                                              toItem:minLabel
+                                                                           attribute:NSLayoutAttributeLeft
+                                                                          multiplier:1.0
+                                                                            constant:0]];
+                }
             } else if (i == [self.questionnaireData[@"options"] count] - 1) {
                 [scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[label]-|"
                                                                                    options:0
                                                                                    metrics:nil
                                                                                      views:NSDictionaryOfVariableBindings(label)]];
+                
+                if ([self.questionnaireData objectForKey:@"maxLabel"]) {
+                    UILabel *maxLabel = [[UILabel alloc] init];
+                    maxLabel.translatesAutoresizingMaskIntoConstraints = NO;
+                    maxLabel.text = self.questionnaireData[@"maxLabel"];
+                    [scrollView addSubview:maxLabel];
+                    
+                    [scrollView addConstraint:[NSLayoutConstraint constraintWithItem:label
+                                                                           attribute:NSLayoutAttributeBottom
+                                                                           relatedBy:NSLayoutRelationEqual
+                                                                              toItem:maxLabel
+                                                                           attribute:NSLayoutAttributeTop
+                                                                          multiplier:1.0
+                                                                            constant:0]];
+                    [scrollView addConstraint:[NSLayoutConstraint constraintWithItem:button
+                                                                           attribute:NSLayoutAttributeRight
+                                                                           relatedBy:NSLayoutRelationEqual
+                                                                              toItem:maxLabel
+                                                                           attribute:NSLayoutAttributeRight
+                                                                          multiplier:1.0
+                                                                            constant:0]];
+                }
             }
             
             if (i > 0) {

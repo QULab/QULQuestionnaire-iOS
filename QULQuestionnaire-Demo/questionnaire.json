@@ -119,6 +119,8 @@
      "instruction": "Please rate on a scale from 1 (strongly agree) to 5 (strongly disagree).",
      "required": true,
      "randomized": false,
+     "minLabel": "Min.",
+     "maxLabel": "Max.",
      "options": [
                  {
                  "key": "rr1",
