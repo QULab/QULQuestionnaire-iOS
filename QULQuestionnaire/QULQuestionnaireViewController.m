@@ -64,7 +64,7 @@
 - (void)prepareViewControllers:(NSArray *)questionnaireData {
     self.stepViewControllers = [@[] mutableCopy];
     
-    for (NSDictionary *question in questionnaireData) {
+    [questionnaireData enumerateObjectsUsingBlock:^(NSDictionary *question, NSUInteger idx, BOOL *stop) {
         UIViewController *viewController;
         if ([question[@"type"] isEqualToString:@"radio"]) {
             viewController = [[QULQuestionnaireSingleSelectViewController alloc] init];
@@ -86,11 +86,12 @@
             ((QULQuestionnaireSortableViewController*)viewController).questionnaireData = question;
         } else {
             NSLog(@"Skipping item with unknown questionnaire type (%@): %@",question[@"type"],question);
-            continue;
         }
         
+        viewController.step.title = (question[@"title"]) ? question[@"title"] : [NSString stringWithFormat:@"%u",idx+1];
+        
         [self.stepViewControllers addObject:viewController];
-    }
+    }];
 }
 
 - (void)finishedAllSteps {

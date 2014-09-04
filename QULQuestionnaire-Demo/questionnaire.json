@@ -2,12 +2,14 @@
     {
         "key": "smiley1",
         "type": "smiley",
+        "title": "Smiley",
         "question": "Overall, how satisfied are you with the customer service experience that you recieved from us?",
         "required": true
     },
     {
         "key": "radio1",
         "type": "radio",
+        "title": "Radio vertical",
         "orientation": 1,
         "question": "During your most recent purchase, how did you contact us?",
         "instruction": "Please select one option.",
@@ -41,6 +43,7 @@
     {
         "key": "multi1",
         "type": "checkbox",
+        "title": "Checkbox multi",
         "question": "Do you think we...",
         "instruction": "Select up to two options that apply.",
         "required": true,
@@ -69,6 +72,7 @@
     {
         "key": "sortable1",
         "type": "sortable",
+        "title": "Sortable",
         "question": "What is your preferred way of being contacted through our sales service?",
         "instruction": "Rank the options: the most preferred options is on the top of the list.",
         "required": true,
@@ -94,6 +98,7 @@
     {
         "key": "slider1",
         "type": "slider",
+        "title": "Slider",
         "question": "How quickly did you get through to a sales person?",
         "instruction": "Select minutes that you were in the line.",
         "required": true,
@@ -107,6 +112,7 @@
     {
         "key": "text1",
         "type": "text",
+        "title": "Text",
         "question": "If you were less than totally satisfied, what could have been done to serve you better?",
         "placeholder": "",
         "required": false
@@ -114,6 +120,7 @@
      {
      "key": "radio2",
      "type": "radio",
+     "title": "Radio horizontal",
      "orientation": 0,
      "question": "I found suitable information to help me with my query.",
      "instruction": "Please rate on a scale from 1 (strongly agree) to 5 (strongly disagree).",
