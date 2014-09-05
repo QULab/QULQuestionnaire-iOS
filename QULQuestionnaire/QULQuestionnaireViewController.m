@@ -92,9 +92,11 @@
             NSLog(@"Skipping item with unknown questionnaire type (%@): %@",question[@"type"],question);
         }
         
-        viewController.step.title = (question[@"title"]) ? question[@"title"] : [NSString stringWithFormat:@"%u",idx+1];
-        
-        [self.stepViewControllers addObject:viewController];
+        if (viewController) {
+            viewController.step.title = (question[@"title"]) ? question[@"title"] : [NSString stringWithFormat:@"%u",idx+1];
+            
+            [self.stepViewControllers addObject:viewController];
+        }
     }];
 }
 
