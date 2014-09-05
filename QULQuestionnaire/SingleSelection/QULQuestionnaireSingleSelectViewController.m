@@ -207,6 +207,7 @@ static const NSInteger otherOption = -1;
                 
                 if ([self.questionnaireData objectForKey:@"minLabel"]) {
                     UILabel *minLabel = [[UILabel alloc] init];
+                    minLabel.numberOfLines = 0;
                     minLabel.translatesAutoresizingMaskIntoConstraints = NO;
                     minLabel.text = self.questionnaireData[@"minLabel"];
                     [scrollView addSubview:minLabel];
@@ -244,6 +245,7 @@ static const NSInteger otherOption = -1;
                 
                 if ([self.questionnaireData objectForKey:@"maxLabel"]) {
                     UILabel *maxLabel = [[UILabel alloc] init];
+                    maxLabel.numberOfLines = 0;
                     maxLabel.translatesAutoresizingMaskIntoConstraints = NO;
                     maxLabel.text = self.questionnaireData[@"maxLabel"];
                     [scrollView addSubview:maxLabel];
