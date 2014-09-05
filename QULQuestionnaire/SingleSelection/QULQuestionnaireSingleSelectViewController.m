@@ -90,6 +90,15 @@ static const NSInteger otherOption = -1;
     self.nextButton = nextButton;
     [self.view addSubview:self.nextButton];
     
+    UIImageView *decreaseIncreaseAccessory;
+    if ([self.questionnaireData[@"decreaseIncreaseAccessory"] boolValue]) {
+        UIImage *increaseDecrease = [UIImage imageNamed:@"IncreaseDecrease"];
+        decreaseIncreaseAccessory = [[UIImageView alloc] initWithImage:increaseDecrease];
+        decreaseIncreaseAccessory.translatesAutoresizingMaskIntoConstraints = NO;
+        [scrollView addSubview:decreaseIncreaseAccessory];
+    }
+    
+    
     if ([self.questionnaireData[@"randomized"] boolValue]) {
         NSMutableArray *shuffledOptions = [self.questionnaireData[@"options"] mutableCopy];
         [shuffledOptions shuffle];
@@ -99,10 +108,19 @@ static const NSInteger otherOption = -1;
         self.questionnaireData = dataCopy;
     }
     
-    NSDictionary *views = NSDictionaryOfVariableBindings(scrollView,
-                                                         questionLabel,
-                                                         instructionLabel,
-                                                         nextButton);
+    NSDictionary *views;
+    if (decreaseIncreaseAccessory) {
+        views = NSDictionaryOfVariableBindings(scrollView,
+                                               questionLabel,
+                                               instructionLabel,
+                                               nextButton,
+                                               decreaseIncreaseAccessory);
+    } else {
+        views = NSDictionaryOfVariableBindings(scrollView,
+                                               questionLabel,
+                                               instructionLabel,
+                                               nextButton);
+    }
     
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[scrollView]-[nextButton]-|"
                                                                       options:0
@@ -112,7 +130,8 @@ static const NSInteger otherOption = -1;
                                                                       options:0
                                                                       metrics:nil
                                                                         views:views]];
-    [scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[questionLabel]-[instructionLabel]"
+    NSString *format = decreaseIncreaseAccessory ? @"V:|-[questionLabel]-[instructionLabel]-[decreaseIncreaseAccessory]" : @"V:|-[questionLabel]-[instructionLabel]";
+    [scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:format
                                                                       options:0
                                                                       metrics:0
                                                                         views:views]];
@@ -133,10 +152,10 @@ static const NSInteger otherOption = -1;
     UIImage *radioOn = [UIImage imageNamed:@"QULQuestionnaireRadioOn"];
     
     int i=0;
-    id previousElement = instructionLabel;
+    id previousElement = decreaseIncreaseAccessory ? decreaseIncreaseAccessory : instructionLabel;
     self.buttons = [@[] mutableCopy];
     for (NSDictionary *option in self.questionnaireData[@"options"]) {
-        
+
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         button.translatesAutoresizingMaskIntoConstraints = NO;
         [button setImage:radioOff forState:UIControlStateNormal];
@@ -207,6 +226,16 @@ static const NSInteger otherOption = -1;
                                                                           multiplier:1.0
                                                                             constant:0]];
                 }
+                
+                if (decreaseIncreaseAccessory) {
+                    [scrollView addConstraint:[NSLayoutConstraint constraintWithItem:button
+                                                                           attribute:NSLayoutAttributeLeft
+                                                                           relatedBy:NSLayoutRelationEqual
+                                                                              toItem:decreaseIncreaseAccessory
+                                                                           attribute:NSLayoutAttributeLeft
+                                                                          multiplier:1.0
+                                                                            constant:0]];
+                }
             } else if (i == [self.questionnaireData[@"options"] count] - 1) {
                 [scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[label]-|"
                                                                                    options:0
@@ -230,6 +259,16 @@ static const NSInteger otherOption = -1;
                                                                            attribute:NSLayoutAttributeRight
                                                                            relatedBy:NSLayoutRelationEqual
                                                                               toItem:maxLabel
+                                                                           attribute:NSLayoutAttributeRight
+                                                                          multiplier:1.0
+                                                                            constant:0]];
+                }
+                
+                if (decreaseIncreaseAccessory) {
+                    [scrollView addConstraint:[NSLayoutConstraint constraintWithItem:button
+                                                                           attribute:NSLayoutAttributeRight
+                                                                           relatedBy:NSLayoutRelationEqual
+                                                                              toItem:decreaseIncreaseAccessory
                                                                            attribute:NSLayoutAttributeRight
                                                                           multiplier:1.0
                                                                             constant:0]];

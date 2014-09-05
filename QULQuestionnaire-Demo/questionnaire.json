@@ -135,6 +135,7 @@
      "randomized": false,
      "minLabel": "Min.",
      "maxLabel": "Max.",
+     "decreaseIncreaseAccessory": true,
      "options": [
                  {
                  "key": "rr1",
