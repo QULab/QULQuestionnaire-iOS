@@ -57,6 +57,7 @@
     UITextView *instructionTextView = [[UITextView alloc] init];
     instructionTextView.translatesAutoresizingMaskIntoConstraints = NO;
     instructionTextView.text = self.questionnaireData[@"instruction"];
+    instructionTextView.editable = NO;
     [self.view addSubview:instructionTextView];
     
     UIButton *nextButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
