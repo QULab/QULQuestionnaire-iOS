@@ -1,4 +1,11 @@
 [
+     {
+     "key": "instruction1",
+     "type": "instruction",
+     "title": "Start",
+     "question": "Questionnaire",
+     "instruction": "Thanks for taking the questionnaire. We highly appreciate your feedback!\n\nThis questionnaire contains X questions and will take about 5 minutes of your time.",
+     },
     {
         "key": "smiley1",
         "type": "smiley",

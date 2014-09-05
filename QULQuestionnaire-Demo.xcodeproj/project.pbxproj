@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3956691019B99564003B8FDB /* QULQuestionnaireInstructionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3956690F19B99564003B8FDB /* QULQuestionnaireInstructionViewController.m */; };
 		396FF7FE194096AE0099714B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396FF7FD194096AE0099714B /* Foundation.framework */; };
 		396FF800194096AE0099714B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396FF7FF194096AE0099714B /* CoreGraphics.framework */; };
 		396FF802194096AE0099714B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396FF801194096AE0099714B /* UIKit.framework */; };
@@ -43,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3956690E19B99564003B8FDB /* QULQuestionnaireInstructionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QULQuestionnaireInstructionViewController.h; path = QULQuestionnaire/Instruction/QULQuestionnaireInstructionViewController.h; sourceTree = SOURCE_ROOT; };
+		3956690F19B99564003B8FDB /* QULQuestionnaireInstructionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QULQuestionnaireInstructionViewController.m; path = QULQuestionnaire/Instruction/QULQuestionnaireInstructionViewController.m; sourceTree = SOURCE_ROOT; };
 		396FF7FA194096AE0099714B /* QULQuestionnaire-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QULQuestionnaire-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		396FF7FD194096AE0099714B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		396FF7FF194096AE0099714B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -125,6 +128,15 @@
 				3983592E195847790053E47D /* QULQuestionnaireSingleSelectViewController.m */,
 			);
 			name = SingleSelection;
+			sourceTree = "<group>";
+		};
+		3956690D19B9953B003B8FDB /* Instruction */ = {
+			isa = PBXGroup;
+			children = (
+				3956690E19B99564003B8FDB /* QULQuestionnaireInstructionViewController.h */,
+				3956690F19B99564003B8FDB /* QULQuestionnaireInstructionViewController.m */,
+			);
+			name = Instruction;
 			sourceTree = "<group>";
 		};
 		396FF7F1194096AE0099714B = {
@@ -241,6 +253,7 @@
 				398359261958475F0053E47D /* QULQuestionnaireViewController.m */,
 				3983593C195848E10053E47D /* NSMutableArray+Shuffle.h */,
 				3983593D195848E10053E47D /* NSMutableArray+Shuffle.m */,
+				3956690D19B9953B003B8FDB /* Instruction */,
 				3922D5F019503B5C00950F37 /* Sortable */,
 				39D8128919502D3E0041847C /* MultipleSelection */,
 				393F70A41947585A00CCC54C /* SingleSelection */,
@@ -402,6 +415,7 @@
 				39835932195847810053E47D /* QULQuestionnaireSliderViewController.m in Sources */,
 				39835935195847870053E47D /* QULQuestionnaireSmileyViewController.m in Sources */,
 				3983593E195848E10053E47D /* NSMutableArray+Shuffle.m in Sources */,
+				3956691019B99564003B8FDB /* QULQuestionnaireInstructionViewController.m in Sources */,
 				3983591D195847210053E47D /* QULAppDelegate.m in Sources */,
 				3983593B195847990053E47D /* QULQuestionnaireTextViewController.m in Sources */,
 				398359381958478F0053E47D /* QULQuestionnaireSortableViewController.m in Sources */,

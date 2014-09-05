@@ -27,6 +27,7 @@
 #import "QULQuestionnaireSingleSelectViewController.h"
 #import "QULQuestionnaireMultiSelectViewController.h"
 #import "QULQuestionnaireSortableViewController.h"
+#import "QULQuestionnaireInstructionViewController.h"
 
 @interface QULQuestionnaireViewController ()
 
@@ -84,6 +85,9 @@
         } else if ([question[@"type"] isEqualToString:@"sortable"]) {
             viewController = [[QULQuestionnaireSortableViewController alloc] init];
             ((QULQuestionnaireSortableViewController*)viewController).questionnaireData = question;
+        } else if ([question[@"type"] isEqualToString:@"instruction"]) {
+            viewController = [[QULQuestionnaireInstructionViewController alloc] init];
+            ((QULQuestionnaireInstructionViewController*)viewController).questionnaireData = question;
         } else {
             NSLog(@"Skipping item with unknown questionnaire type (%@): %@",question[@"type"],question);
         }
