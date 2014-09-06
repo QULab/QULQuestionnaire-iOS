@@ -168,8 +168,8 @@
 }
 
 - (void)proceed {
-    NSDictionary *result = @{@"question": self.questionnaireData[@"key"],
-                             @"answer": self.textView.text};
+    NSDictionary *result = @{@"q": self.questionnaireData[@"key"],
+                             @"a": self.textView.text};
     [self.stepsController.results[@"data"] addObject:result];
     
     [self.stepsController showNextStep];

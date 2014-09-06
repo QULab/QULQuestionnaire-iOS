@@ -187,11 +187,11 @@
 
 - (void)proceed {
     NSMutableDictionary *result = [@{} mutableCopy];
-    result[@"question"] = self.questionnaireData[@"key"];
+    result[@"q"] = self.questionnaireData[@"key"];
     
     [self.buttons enumerateObjectsUsingBlock:^(UIButton *button, NSUInteger idx, BOOL *stop) {
         if (button.selected) {
-            result[@"answer"] = @(button.tag);
+            result[@"a"] = @(button.tag);
             
             *stop = YES;
         }

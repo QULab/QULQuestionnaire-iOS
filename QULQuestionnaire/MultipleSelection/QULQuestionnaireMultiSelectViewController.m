@@ -209,12 +209,12 @@
 
 - (void)proceed {
     NSMutableDictionary *result = [@{} mutableCopy];
-    result[@"question"] = self.questionnaireData[@"key"];
-    result[@"answer"] = [@[] mutableCopy];
+    result[@"q"] = self.questionnaireData[@"key"];
+    result[@"a"] = [@[] mutableCopy];
     
     [self.selectedOptions enumerateObjectsUsingBlock:^(NSNumber *buttonTag, NSUInteger idx, BOOL *stop) {
         NSDictionary *option = self.questionnaireData[@"options"][[buttonTag integerValue]];
-        result[@"answer"][idx] = option[@"key"];
+        result[@"a"][idx] = option[@"key"];
     }];
     [self.stepsController.results[@"data"] addObject:result];
     

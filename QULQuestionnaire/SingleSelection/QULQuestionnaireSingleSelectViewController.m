@@ -420,15 +420,15 @@ static const NSInteger otherOption = -1;
 
 - (void)proceed {
     NSMutableDictionary *result = [@{} mutableCopy];
-    result[@"question"] = self.questionnaireData[@"key"];
+    result[@"q"] = self.questionnaireData[@"key"];
     
     [self.buttons enumerateObjectsUsingBlock:^(UIButton *button, NSUInteger idx, BOOL *stop) {
         if (button.selected) {
             if (button.tag == otherOption) {
-                result[@"answer"] = self.textField.text;
+                result[@"a"] = self.textField.text;
             } else {
                 NSDictionary *option = self.questionnaireData[@"options"][button.tag];
-                result[@"answer"] = option[@"key"];
+                result[@"a"] = option[@"key"];
             }
             
             *stop = YES;

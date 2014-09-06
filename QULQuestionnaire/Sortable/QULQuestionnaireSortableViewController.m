@@ -154,11 +154,11 @@
 
 - (void)proceed {
     NSMutableDictionary *result = [@{} mutableCopy];
-    result[@"question"] = self.questionnaireData[@"key"];
-    result[@"answer"] = [@[] mutableCopy];
+    result[@"q"] = self.questionnaireData[@"key"];
+    result[@"a"] = [@[] mutableCopy];
     
     [self.orderedOptions enumerateObjectsUsingBlock:^(NSDictionary *option, NSUInteger idx, BOOL *stop) {
-        result[@"answer"][idx] = option[@"key"];
+        result[@"a"][idx] = option[@"key"];
     }];
     [self.stepsController.results[@"data"] addObject:result];
 

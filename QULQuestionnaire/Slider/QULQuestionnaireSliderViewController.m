@@ -163,8 +163,8 @@
 }
 
 - (void)proceed {
-    NSDictionary *result = @{@"question": self.questionnaireData[@"key"],
-                             @"answer": @(self.slider.value)};    
+    NSDictionary *result = @{@"q": self.questionnaireData[@"key"],
+                             @"a": @(self.slider.value)};    
     [self.stepsController.results[@"data"] addObject:result];
     
     [self.stepsController showNextStep];
