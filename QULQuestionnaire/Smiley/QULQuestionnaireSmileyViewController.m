@@ -123,11 +123,11 @@
                                                          multiplier:1.0
                                                            constant:0]];
     
-    NSArray *smileys = @[@"QULQuestionnaireSmileyVerySad",
-                         @"QULQuestionnaireSmileySad",
-                         @"QULQuestionnaireSmileyOK",
-                         @"QULQuestionnaireSmileyHappy",
-                         @"QULQuestionnaireSmileyVeryHappy"];
+    NSArray *smileys = @[@"Smiley_very_sad",
+                         @"Smiley_sad",
+                         @"Smiley_ok",
+                         @"Smiley_happy",
+                         @"Smiley_very_happy"];
     
     int i = 0;
     id previousElement = instructionLabel;
@@ -136,7 +136,7 @@
     for (NSString *smileyName in smileys) {
         imgPath = [resourceBundle pathForResource:smileyName
                                            ofType:@"png"];
-        selectedImgPath = [resourceBundle pathForResource:[NSString stringWithFormat:@"%@Selected",smileyName]
+        selectedImgPath = [resourceBundle pathForResource:[NSString stringWithFormat:@"%@_selected",smileyName]
                                                    ofType:@"png"];
         
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];

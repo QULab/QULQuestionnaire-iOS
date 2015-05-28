@@ -99,7 +99,7 @@ static const NSInteger otherOption = -1;
     
     UIImageView *decreaseIncreaseAccessory;
     if ([self.questionnaireData[@"decreaseIncreaseAccessory"] boolValue]) {
-        NSString *imgPath = [resourceBundle pathForResource:@"IncreaseDecrease"
+        NSString *imgPath = [resourceBundle pathForResource:@"QULQuestionnaireDecreaseIncrease"
                                                      ofType:@"png"];
         UIImage *increaseDecrease = [UIImage imageWithContentsOfFile:imgPath];
         decreaseIncreaseAccessory = [[UIImageView alloc] initWithImage:increaseDecrease];
@@ -157,10 +157,10 @@ static const NSInteger otherOption = -1;
                                                                       metrics:0
                                                                         views:views]];
     
-    NSString *radioOffPath = [resourceBundle pathForResource:@"QULQuestionnaireRadioOff"
+    NSString *radioOffPath = [resourceBundle pathForResource:@"radioOff"
                                                       ofType:@"png"];
     UIImage *radioOff = [UIImage imageWithContentsOfFile:radioOffPath];
-    NSString *radioOnPath = [resourceBundle pathForResource:@"QULQuestionnaireRadioOn"
+    NSString *radioOnPath = [resourceBundle pathForResource:@"radioOn"
                                                     ofType:@"png"];
     UIImage *radioOn = [UIImage imageWithContentsOfFile:radioOnPath];
     

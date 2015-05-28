@@ -139,10 +139,10 @@
                                                            constant:0]];
     
     
-    NSString *radioOffPath = [resourceBundle pathForResource:@"QULQuestionnaireRadioOff"
+    NSString *radioOffPath = [resourceBundle pathForResource:@"radioOff"
                                                       ofType:@"png"];
     UIImage *radioOff = [UIImage imageWithContentsOfFile:radioOffPath];
-    NSString *radioOnPath = [resourceBundle pathForResource:@"QULQuestionnaireRadioOn"
+    NSString *radioOnPath = [resourceBundle pathForResource:@"radioOn"
                                                      ofType:@"png"];
     UIImage *radioOn = [UIImage imageWithContentsOfFile:radioOnPath];
     
