@@ -81,7 +81,7 @@ static const NSInteger otherOption = -1;
     [scrollView addSubview:instructionLabel];
     
     UIButton *nextButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [nextButton setTitle:@"Next" forState:UIControlStateNormal];
+    [nextButton setTitle:NSLocalizedString(@"Next", nil) forState:UIControlStateNormal];
     nextButton.translatesAutoresizingMaskIntoConstraints = NO;
     nextButton.enabled = ![self.questionnaireData[@"required"] boolValue];
     [nextButton addTarget:self
@@ -122,7 +122,7 @@ static const NSInteger otherOption = -1;
                                                nextButton);
     }
     
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[scrollView]-[nextButton]-|"
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-(20)-[scrollView]-[nextButton]-(20)-|"
                                                                       options:0
                                                                       metrics:nil
                                                                         views:views]];
@@ -315,7 +315,13 @@ static const NSInteger otherOption = -1;
             if (i == 0) {
                 format = @"V:[previousElement]-(45)-[button]";
             } else if (i == [self.questionnaireData[@"options"] count]-1) {
-                format = @"V:[previousElement]-[button]";
+                if ([self.questionnaireData[@"other"] boolValue] &&
+                    [self.questionnaireData[@"orientation"] integerValue] == QULQuestionnaireSingleSelectOrientationVertical) {
+                    format = @"V:[previousElement]-[button]";
+                } else {
+                    format = @"V:[previousElement]-[button]-|";
+                }
+                
             } else {
                 format = @"V:[previousElement]-[button]";
             }

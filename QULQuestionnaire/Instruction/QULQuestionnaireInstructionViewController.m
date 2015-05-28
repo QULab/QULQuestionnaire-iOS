@@ -58,10 +58,11 @@
     instructionTextView.translatesAutoresizingMaskIntoConstraints = NO;
     instructionTextView.text = self.questionnaireData[@"instruction"];
     instructionTextView.editable = NO;
+    instructionTextView.font = [UIFont systemFontOfSize:15.0];
     [self.view addSubview:instructionTextView];
     
     UIButton *nextButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [nextButton setTitle:@"Next" forState:UIControlStateNormal];
+    [nextButton setTitle:NSLocalizedString(@"Next", nil) forState:UIControlStateNormal];
     nextButton.translatesAutoresizingMaskIntoConstraints = NO;
     [nextButton addTarget:self
                    action:@selector(proceed)
@@ -72,7 +73,7 @@
                                                          instructionTextView,
                                                          nextButton);
     
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[questionLabel]-[instructionTextView]-[nextButton]-|"
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-(20)-[questionLabel]-[instructionTextView]-[nextButton]-(20)-|"
                                                                       options:0
                                                                       metrics:nil
                                                                         views:views]];

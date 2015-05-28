@@ -74,7 +74,7 @@
     [scrollView addSubview:instructionLabel];
     
     UIButton *nextButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [nextButton setTitle:NSLocalizedString(@"Next", nil)
+    [nextButton setTitle:NSLocalizedString(NSLocalizedString(@"Next", nil), nil)
                 forState:UIControlStateNormal];
     nextButton.translatesAutoresizingMaskIntoConstraints = NO;
     nextButton.enabled = ![self.questionnaireData[@"required"] boolValue];
@@ -98,7 +98,7 @@
                                                          instructionLabel,
                                                          nextButton);
     
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[scrollView]-[nextButton]-|"
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-(20)-[scrollView]-[nextButton]-(20)-|"
                                                                       options:0
                                                                       metrics:nil
                                                                         views:views]];

@@ -94,7 +94,7 @@
     [self.view addSubview:self.selectedValueLabel];
     
     UIButton *nextButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [nextButton setTitle:@"Next" forState:UIControlStateNormal];
+    [nextButton setTitle:NSLocalizedString(@"Next", nil) forState:UIControlStateNormal];
     nextButton.translatesAutoresizingMaskIntoConstraints = NO;
     nextButton.enabled = ![self.questionnaireData[@"required"] boolValue];
     [nextButton addTarget:self
@@ -111,11 +111,11 @@
                                                          selectedValueLabel,
                                                          nextButton);
     
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[questionLabel]-[instructionLabel]-(45)-[slider]-[minLabel]"
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-(20)-[questionLabel]-[instructionLabel]-(45)-[slider]-[minLabel]"
                                                                       options:0
                                                                       metrics:nil
                                                                         views:views]];
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[nextButton]-|"
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[nextButton]-(20)-|"
                                                                       options:0
                                                                       metrics:nil
                                                                         views:views]];
