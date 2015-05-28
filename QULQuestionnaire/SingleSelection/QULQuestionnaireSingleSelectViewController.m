@@ -25,7 +25,10 @@
 
 static const NSInteger otherOption = -1;
 
-@interface QULQuestionnaireSingleSelectViewController () <UITextFieldDelegate>
+@interface QULQuestionnaireSingleSelectViewController () <UITextFieldDelegate>  {
+    NSBundle *resourceBundle;
+}
+
 
 @property (strong, nonatomic) UIButton *nextButton;
 @property (strong, nonatomic) NSMutableArray *buttons;
@@ -53,6 +56,10 @@ static const NSInteger otherOption = -1;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    resourceBundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]]
+                                               pathForResource:@"QULQuestionnaire"
+                                               ofType:@"bundle"]];
     
     if(([self.questionnaireData[@"orientation"] integerValue] == QULQuestionnaireSingleSelectOrientationHorizontal) &&
        (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)) {
@@ -92,7 +99,9 @@ static const NSInteger otherOption = -1;
     
     UIImageView *decreaseIncreaseAccessory;
     if ([self.questionnaireData[@"decreaseIncreaseAccessory"] boolValue]) {
-        UIImage *increaseDecrease = [UIImage imageNamed:@"IncreaseDecrease"];
+        NSString *imgPath = [resourceBundle pathForResource:@"IncreaseDecrease"
+                                                     ofType:@"png"];
+        UIImage *increaseDecrease = [UIImage imageWithContentsOfFile:imgPath];
         decreaseIncreaseAccessory = [[UIImageView alloc] initWithImage:increaseDecrease];
         decreaseIncreaseAccessory.translatesAutoresizingMaskIntoConstraints = NO;
         [scrollView addSubview:decreaseIncreaseAccessory];
@@ -148,8 +157,12 @@ static const NSInteger otherOption = -1;
                                                                       metrics:0
                                                                         views:views]];
     
-    UIImage *radioOff = [UIImage imageNamed:@"QULQuestionnaireRadioOff"];
-    UIImage *radioOn = [UIImage imageNamed:@"QULQuestionnaireRadioOn"];
+    NSString *radioOffPath = [resourceBundle pathForResource:@"QULQuestionnaireRadioOff"
+                                                      ofType:@"png"];
+    UIImage *radioOff = [UIImage imageWithContentsOfFile:radioOffPath];
+    NSString *radioOnPath = [resourceBundle pathForResource:@"QULQuestionnaireRadioOn"
+                                                    ofType:@"png"];
+    UIImage *radioOn = [UIImage imageWithContentsOfFile:radioOnPath];
     
     int i=0;
     id previousElement = decreaseIncreaseAccessory ? decreaseIncreaseAccessory : instructionLabel;

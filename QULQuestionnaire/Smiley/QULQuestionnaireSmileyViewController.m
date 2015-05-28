@@ -22,7 +22,9 @@
 #import "QULQuestionnaireSmileyViewController.h"
 #import "RMStepsController.h"
 
-@interface QULQuestionnaireSmileyViewController ()
+@interface QULQuestionnaireSmileyViewController () {
+    NSBundle *resourceBundle;
+}
 
 @property (strong, nonatomic) UIButton *nextButton;
 @property (strong, nonatomic) NSMutableArray *buttons;
@@ -49,6 +51,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    resourceBundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]]
+                                               pathForResource:@"QULQuestionnaire"
+                                               ofType:@"bundle"]];
     
     UIScrollView *scrollView = [[UIScrollView alloc] init];
     scrollView.translatesAutoresizingMaskIntoConstraints = NO;
@@ -126,14 +132,19 @@
     int i = 0;
     id previousElement = instructionLabel;
     self.buttons = [@[] mutableCopy];
+    NSString *imgPath, *selectedImgPath;
     for (NSString *smileyName in smileys) {
+        imgPath = [resourceBundle pathForResource:smileyName
+                                           ofType:@"png"];
+        selectedImgPath = [resourceBundle pathForResource:[NSString stringWithFormat:@"%@Selected",smileyName]
+                                                   ofType:@"png"];
         
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         button.translatesAutoresizingMaskIntoConstraints = NO;
         button.tag = i;
-        [button setImage:[UIImage imageNamed:smileyName]
+        [button setImage:[UIImage imageWithContentsOfFile:imgPath]
                 forState:UIControlStateNormal];
-        [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@Selected",smileyName]]
+        [button setImage:[UIImage imageWithContentsOfFile:selectedImgPath]
                 forState:UIControlStateSelected];
         [button addTarget:self
                    action:@selector(didSelectButton:)

@@ -23,7 +23,10 @@
 #import "RMStepsController.h"
 #import "NSMutableArray+Shuffle.h"
 
-@interface QULQuestionnaireMultiSelectViewController ()
+@interface QULQuestionnaireMultiSelectViewController () {
+    NSBundle *resourceBundle;
+}
+
 
 @property (strong, nonatomic) UIButton *nextButton;
 
@@ -51,6 +54,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    resourceBundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]]
+                                               pathForResource:@"QULQuestionnaire"
+                                               ofType:@"bundle"]];
 
     self.selectedOptions = [@[] mutableCopy];
     
@@ -132,8 +139,12 @@
                                                            constant:0]];
     
     
-    UIImage *radioOff = [UIImage imageNamed:@"QULQuestionnaireRadioOff"];
-    UIImage *radioOn = [UIImage imageNamed:@"QULQuestionnaireRadioOn"];
+    NSString *radioOffPath = [resourceBundle pathForResource:@"QULQuestionnaireRadioOff"
+                                                      ofType:@"png"];
+    UIImage *radioOff = [UIImage imageWithContentsOfFile:radioOffPath];
+    NSString *radioOnPath = [resourceBundle pathForResource:@"QULQuestionnaireRadioOn"
+                                                     ofType:@"png"];
+    UIImage *radioOn = [UIImage imageWithContentsOfFile:radioOnPath];
     
     int i=0;
     id previousElement = instructionLabel;
