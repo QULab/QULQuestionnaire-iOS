@@ -1,0 +1,17 @@
+PODS:
+  - QULQuestionnaire (0.4):
+    - RMStepsController (~> 1.0.2)
+  - RMStepsController (1.0.2)
+
+DEPENDENCIES:
+  - QULQuestionnaire (from `../`)
+
+EXTERNAL SOURCES:
+  QULQuestionnaire:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  QULQuestionnaire: 27254168f0028ec75a700374bd35a129f88639cc
+  RMStepsController: 195aa02c57ee5fea74483d0b9dcc30881ae7639d
+
+COCOAPODS: 0.37.2

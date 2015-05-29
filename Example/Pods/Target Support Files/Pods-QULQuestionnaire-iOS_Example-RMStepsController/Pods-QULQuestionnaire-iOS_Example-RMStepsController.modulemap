@@ -1,0 +1,6 @@
+framework module RMStepsController {
+  umbrella header "Pods-QULQuestionnaire-iOS_Example-RMStepsController-umbrella.h"
+
+  export *
+  module * { export * }
+}

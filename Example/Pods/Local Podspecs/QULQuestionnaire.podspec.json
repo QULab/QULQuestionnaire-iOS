@@ -1,0 +1,29 @@
+{
+  "name": "QULQuestionnaire",
+  "version": "0.4",
+  "summary": "Drop-in in-app questionnaire for iOS",
+  "homepage": "https://github.com/QULab/QULQuestionnaire-iOS",
+  "license": "Apache License, Version 2.0",
+  "authors": {
+    "Tilo Westermann": "tilo.westermann@tu-berlin.de"
+  },
+  "source": {
+    "git": "https://github.com/QULab/QULQuestionnaire-iOS.git",
+    "tag": "0.4"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "ios": {
+    "resource_bundles": {
+      "QULQuestionnaire": "Pod/Assets/**/*.png"
+    }
+  },
+  "dependencies": {
+    "RMStepsController": [
+      "~> 1.0.2"
+    ]
+  }
+}

@@ -1,11 +1,15 @@
 # QULQuestionnaire-iOS
 
-[![Pod Version](http://img.shields.io/cocoapods/v/QULQuestionnaire.svg?style=flat)](http://cocoadocs.org/docsets/QULQuestionnaire/)
-[![Pod Platform](http://img.shields.io/cocoapods/p/QULQuestionnaire.svg?style=flat)](http://cocoadocs.org/docsets/QULQuestionnaire/)
-[![Pod License](http://img.shields.io/cocoapods/l/QULQuestionnaire.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0.html)
+[![CI Status](http://img.shields.io/travis/QULab/QULQuestionnaire.svg?style=flat)](https://travis-ci.org/QULab/QULQuestionnaire)
+[![Version](https://img.shields.io/cocoapods/v/QULQuestionnaire.svg?style=flat)](http://cocoapods.org/pods/QULQuestionnaire)
+[![License](https://img.shields.io/cocoapods/l/QULQuestionnaire.svg?style=flat)](http://cocoapods.org/pods/QULQuestionnaire)
+[![Platform](https://img.shields.io/cocoapods/p/QULQuestionnaire.svg?style=flat)](http://cocoapods.org/pods/QULQuestionnaire)
 
-QULQuestionnaire provides a drop-in solution for presenting an in-app questionnaire to the user. It may fetch questionnaire data from a remote server and build the questionnaire at runtime with the following options:
+QULQuestionnaire provides a drop-in solution for presenting an in-app questionnaire to the user.
 
+## Usage
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ##Questionaire items & JSON format
 
@@ -21,6 +25,9 @@ QULQuestionnaire provides a drop-in solution for presenting an in-app questionna
   "required": BOOL,
   "randomized": BOOL,
   "other": BOOL // optional; only available in vertical orientation
+  "minLabel": STRING, // optional; only available in horizontal orientation
+  "maxLabel": STRING, // optional; only available in horizontal orientation
+  "decreaseIncreaseAccessory": BOOL, // optional; only available in horizontal orientation
   "options": [
     {
       "key": STRING,
@@ -30,8 +37,8 @@ QULQuestionnaire provides a drop-in solution for presenting an in-app questionna
   ]
 }
 ```
-![Single selection vertical](QULQuestionnaire-Demo/Screenshots/SingleSelectionVertical.png)
-![Single selection horizontal](QULQuestionnaire-Demo/Screenshots/SingleSelectionHorizontal.png)
+![Single selection vertical](Screenshots/SingleSelectionVertical.png)
+![Single selection horizontal](Screenshots/SingleSelectionHorizontal.png)
 
 ###Overall rating (smiley scale)
 ```json
@@ -43,7 +50,7 @@ QULQuestionnaire provides a drop-in solution for presenting an in-app questionna
   "required": BOOL
 }
 ```
-![Smiley](QULQuestionnaire-Demo/Screenshots/Smiley.png)
+![Smiley](Screenshots/Smiley.png)
 
 ###Multiple selection (checkbox)
 ```json
@@ -81,7 +88,7 @@ QULQuestionnaire provides a drop-in solution for presenting an in-app questionna
   "stepValue": INT // optional
 }
 ```
-![Slider](QULQuestionnaire-Demo/Screenshots/Slider.png)
+![Slider](Screenshots/Slider.png)
 
 ###Text
 ```json
@@ -95,7 +102,7 @@ QULQuestionnaire provides a drop-in solution for presenting an in-app questionna
   "required": BOOL
 }
 ```
-![Single selection vertical](QULQuestionnaire-Demo/Screenshots/Text.png)
+![Single selection vertical](Screenshots/Text.png)
 
 ###Ranking
 ```json
@@ -114,7 +121,7 @@ QULQuestionnaire provides a drop-in solution for presenting an in-app questionna
   ]
 }
 ```
-![Ranking](QULQuestionnaire-Demo/Screenshots/Ranking.png)
+![Ranking](Screenshots/Ranking.png)
 
 #Installation
 

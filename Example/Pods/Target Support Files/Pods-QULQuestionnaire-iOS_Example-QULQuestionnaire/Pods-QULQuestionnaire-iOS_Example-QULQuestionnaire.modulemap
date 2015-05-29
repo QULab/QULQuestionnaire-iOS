@@ -1,0 +1,6 @@
+framework module QULQuestionnaire {
+  umbrella header "Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire-umbrella.h"
+
+  export *
+  module * { export * }
+}

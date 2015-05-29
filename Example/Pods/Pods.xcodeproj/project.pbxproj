@@ -1,0 +1,1254 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		003EB2CE9400264CA07AF753 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47570E1BE4A93D4F6513443B /* QuartzCore.framework */; };
+		0228BEAED8B26C3E1729F3FD /* QULQuestionnaireSingleSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5324F9274A1BE0D9C6E755CE /* QULQuestionnaireSingleSelectViewController.m */; };
+		05263BF336DA2D77FB16998F /* Smiley_ok_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 72601CFAC0C448D09FB9DC38 /* Smiley_ok_selected.png */; };
+		0595445E99B80A7DF0B80E1B /* radioOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 75CCC6FAA954BFEA7A2D9B0B /* radioOn.png */; };
+		0823265CF9909ACBB7F71C76 /* QULQuestionnaireSmileyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E70D13CA386349EB984F27AA /* QULQuestionnaireSmileyViewController.m */; };
+		0C63D62730394DB432E38EF9 /* QULQuestionnaireTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CF5FDD2D4408C7AEC46F6A /* QULQuestionnaireTextViewController.m */; };
+		0EBB2AB913C39EDE58539457 /* QULQuestionnaireViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C4BCC0F83075487B03B7355 /* QULQuestionnaireViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0ED1DC16598FD8ECA9CAA286 /* Pods-QULQuestionnaire-iOS_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7763575A477BB9F3B6220494 /* Pods-QULQuestionnaire-iOS_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		172A839BD9C8AC5BC28F0EFA /* QULQuestionnaireViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9B7A94B72480B6D051AE19 /* QULQuestionnaireViewController.m */; };
+		1897B3E859BBE9EC27ADA036 /* QULQuestionnaire.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EAF6130363AB515DFB4C9E1E /* QULQuestionnaire.bundle */; };
+		1D803A74D0361D4B5C23FF82 /* QULQuestionnaireDecreaseIncrease@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F4BB32D13B32BFF4887F0BA /* QULQuestionnaireDecreaseIncrease@2x.png */; };
+		21E17B383567A61749576537 /* QULQuestionnaireSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ECEA949EB551FEE3B5839E /* QULQuestionnaireSliderViewController.m */; };
+		23765A6A7FC14697E945ED85 /* radioOff@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 781B53B4CC9896CAB2979D39 /* radioOff@2x.png */; };
+		2825D9746B3757C1B2E9F882 /* Smiley_ok@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DEFC48CB9D6E9E22738F022 /* Smiley_ok@2x.png */; };
+		2B1779D7FD26F2938F265246 /* Smiley_ok.png in Resources */ = {isa = PBXBuildFile; fileRef = 795DE60F1FDC9316E56B3FF6 /* Smiley_ok.png */; };
+		2C0BB7051CF79D80D922A83B /* Pods-QULQuestionnaire-iOS_Example-RMStepsController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 465ACF836800097CC063A6C1 /* Pods-QULQuestionnaire-iOS_Example-RMStepsController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DB4677F6A8067ABA80B2820 /* QULQuestionnaireInstructionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24221625C7D4D0B701E21759 /* QULQuestionnaireInstructionViewController.m */; };
+		2F46113A88E9E228BBF4A93E /* Smiley_sad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0499EC1EFAFEB1D6A68FCD5A /* Smiley_sad@2x.png */; };
+		2F6E1DD96D4BA49679D42DBB /* Smiley_happy@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51753FC05F0BF34E00159ABA /* Smiley_happy@3x.png */; };
+		31EBBBAC9D96054F4AF8B65E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DACC84CE1C702F31D3DAAB2C /* Foundation.framework */; };
+		3217653B75C24CF6FFAD099C /* Smiley_happy_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51E159B3AE93CD0755ECAD48 /* Smiley_happy_selected@2x.png */; };
+		32FCBFCE7B9F66772F67049D /* Smiley_ok_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1119BD51F23E6AA94AA3822E /* Smiley_ok_selected@2x.png */; };
+		38CE4943251309EC216C3301 /* RMStep.m in Sources */ = {isa = PBXBuildFile; fileRef = 041FA50C0A9ABFA2866CC615 /* RMStep.m */; };
+		3E9D6974A8E1E7C737A903F7 /* RMStepsBar.h in Headers */ = {isa = PBXBuildFile; fileRef = ECADFD5DB40939C0FF332008 /* RMStepsBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		411AA7A299F1070ACB199B0D /* QULQuestionnaireTextViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BE31B5070F6E84AD6C7BF0B8 /* QULQuestionnaireTextViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41C7D15E00A7479C91C9323D /* RMStepsController.h in Headers */ = {isa = PBXBuildFile; fileRef = CAE3F3679E196716B5EEF718 /* RMStepsController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42001C8D4081AFB6971D8A0F /* Smiley_very_happy.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C34C184A451C3D7A708C31E /* Smiley_very_happy.png */; };
+		4392F346399E23401FD13F3B /* Smiley_very_sad_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 34D41EE55184C7D8B309F278 /* Smiley_very_sad_selected.png */; };
+		476187DE3660D1362F11CD12 /* radioOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 026C2900BDE864FDD51F4940 /* radioOff.png */; };
+		4D7A95015DC38D120C1A0F42 /* Smiley_very_sad@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29644DEE673B0807F15201E6 /* Smiley_very_sad@3x.png */; };
+		4EDCF0CDCB972EF4133D1524 /* Smiley_very_sad.png in Resources */ = {isa = PBXBuildFile; fileRef = A945E1456C340E5FC7D770F9 /* Smiley_very_sad.png */; };
+		51492C1A09AD8FCCF7989D42 /* radioOn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8074C41ED97C9F50C84CD00 /* radioOn@2x.png */; };
+		5C18B671F50787716455921A /* RMStepsController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 678CABCE86E534D30D80FA7C /* RMStepsController.framework */; };
+		626687543D76EA385A655F56 /* QULQuestionnaireSliderViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AC68AE922E2FDE2A43C03FB2 /* QULQuestionnaireSliderViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		680C4870381FAAFED27F83EF /* QULQuestionnaireSortableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2017099358B8B736213E0801 /* QULQuestionnaireSortableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B86517D7ED67074C8741A8D /* Smiley_happy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCA25C30F84DCFDB5A05AAE0 /* Smiley_happy@2x.png */; };
+		6D73F1C467675DC9A0930C7C /* Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB3083FC6E27041965B0A18 /* Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire-dummy.m */; };
+		6DE1F4B1567BCC4AC449CC37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DACC84CE1C702F31D3DAAB2C /* Foundation.framework */; };
+		715924527C19302062379327 /* QULQuestionnaireDecreaseIncrease.png in Resources */ = {isa = PBXBuildFile; fileRef = 3018F7363DFF22DF1FF3401A /* QULQuestionnaireDecreaseIncrease.png */; };
+		7233D818F31D90C1F886666F /* Smiley_happy.png in Resources */ = {isa = PBXBuildFile; fileRef = 931B9740498B291882DF45BC /* Smiley_happy.png */; };
+		7A3AE35F4475A4F035983AAC /* Smiley_very_happy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8B977DA48F439160634A804 /* Smiley_very_happy@2x.png */; };
+		7E67542402B1EBEAFB12FBBF /* QULQuestionnaireInstructionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DBD93301DA291E77C4B0D3A /* QULQuestionnaireInstructionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		818B8FFED240DB29E75D4078 /* Smiley_ok@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EFAC288565E967D475319AA /* Smiley_ok@3x.png */; };
+		859B3D2177ECE2A88B340E91 /* RMStep.h in Headers */ = {isa = PBXBuildFile; fileRef = 808AADBA0DBC3CCD925B34D3 /* RMStep.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8833D0C23A706FC215E89405 /* Pods-QULQuestionnaire-iOS_Example-RMStepsController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7638BFDE15F62461092D6C /* Pods-QULQuestionnaire-iOS_Example-RMStepsController-dummy.m */; };
+		8C43D76F9F42C0978C288544 /* Smiley_sad.png in Resources */ = {isa = PBXBuildFile; fileRef = F58E39B000DCE4AD1C8B5629 /* Smiley_sad.png */; };
+		8FA68EA1625CB3ADA1931F18 /* RMStepsBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBF5510E9D5F149168BE391 /* RMStepsBar.m */; };
+		9E96B7BE8A1676764DFADEB4 /* Smiley_very_sad_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A261C2661C79A48AE2180C /* Smiley_very_sad_selected@2x.png */; };
+		9F44109E788B634465D9F8BF /* Smiley_sad_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57665888BDEFA15524FFEF7E /* Smiley_sad_selected@3x.png */; };
+		A09CC9575E3BCFBA6F05DAB2 /* Smiley_happy_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 06737DD7E13C8A571D178B0D /* Smiley_happy_selected.png */; };
+		A2A7AE127EFC622B4D50DBD9 /* Smiley_very_sad_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F57A72AF56F7139293CFCECD /* Smiley_very_sad_selected@3x.png */; };
+		A50B12CFDF2B4C2DDC362832 /* NSMutableArray+Shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B2A9140238F5AA17557278 /* NSMutableArray+Shuffle.m */; };
+		A83378C8773636F785E87856 /* Smiley_very_happy_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1231332F808BD7C71BAA016A /* Smiley_very_happy_selected@2x.png */; };
+		B109C1D8B786E3FB0189A218 /* QULQuestionnaireSingleSelectViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 87130B69AEC94B114B9AD8B5 /* QULQuestionnaireSingleSelectViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5048136DC430A64ACBBCDD8 /* Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 486F2171076C8397825F3C9A /* Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B58A8A9D1BE0BCCDC9835A09 /* Smiley_sad@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 64CE8DB72871760F919F55EB /* Smiley_sad@3x.png */; };
+		BA6F6D420D4B4C0C294A0FC1 /* Smiley_sad_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F72169D205B69F18860A621 /* Smiley_sad_selected.png */; };
+		BBB263B04D17F73748A7E4B8 /* Smiley_very_happy_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 79EEFD6CA8DD0EF56877E578 /* Smiley_very_happy_selected.png */; };
+		BE9BB2B74A406A00F06194D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DACC84CE1C702F31D3DAAB2C /* Foundation.framework */; };
+		C0DEF666B7CFFAFDF54BA10B /* Smiley_happy_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E95F97A857EE0025962BD2 /* Smiley_happy_selected@3x.png */; };
+		C4BB95F36D89C62EBF355277 /* Smiley_very_happy_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EED7EF6D76084E30F8E4F3CC /* Smiley_very_happy_selected@3x.png */; };
+		CB29BA256A0A7C9F39849284 /* QULQuestionnaireMultiSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E27D86992D5E3811BFC3AC /* QULQuestionnaireMultiSelectViewController.m */; };
+		DAFA5075E5BFE3CBB5144D4C /* NSMutableArray+Shuffle.h in Headers */ = {isa = PBXBuildFile; fileRef = A6394FE5BBAEED8F9A46EFD5 /* NSMutableArray+Shuffle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD016057B142FBD4BE292E7D /* QULQuestionnaireSortableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B93C99768B52F4570231A4F /* QULQuestionnaireSortableViewController.m */; };
+		E7CA51D48E6796F3518B6C44 /* QULQuestionnaireSmileyViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 932EE4D5CC9FF503B54FBFA4 /* QULQuestionnaireSmileyViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8327032DC9EC31739EF067F /* QULQuestionnaireDecreaseIncrease@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7285E59A0D2023F3110B526 /* QULQuestionnaireDecreaseIncrease@3x.png */; };
+		EBEB27B25F9BDE32D3FFB7CB /* Pods-QULQuestionnaire-iOS_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC227B24E3C353C85533E2E /* Pods-QULQuestionnaire-iOS_Example-dummy.m */; };
+		EEB0F1D7AA7D02355ECFBF8A /* Smiley_very_happy@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 286F6B72B71F04FBFFB3A74A /* Smiley_very_happy@3x.png */; };
+		EF0D2593795E8AFE2B1E8831 /* Smiley_sad_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19C9625F959FB31D9611A223 /* Smiley_sad_selected@2x.png */; };
+		F317D2CDCA97F08A8B26ACAA /* Smiley_ok_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC7DBAB6DD4B1DC1F9F25337 /* Smiley_ok_selected@3x.png */; };
+		F70DABF44849D4907DC58640 /* Smiley_very_sad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 547ABDD3ECF3917F2DE2AE0E /* Smiley_very_sad@2x.png */; };
+		F93486679DE01B2601288A2D /* QULQuestionnaireMultiSelectViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 72421C1DB8DAC88C278464B1 /* QULQuestionnaireMultiSelectViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC537A18E8BD50BCDC3BAAB3 /* RMStepsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6E393CE426A20B69C540E8 /* RMStepsController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		624998CDCE135223B18766A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7350E3264ED5778254A441A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54EDA2B2508C7DA5BF3253B2;
+			remoteInfo = "Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire-QULQuestionnaire";
+		};
+		841E736D5A36CAA4FCDF3243 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7350E3264ED5778254A441A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5EA6B1CF69AFC7030FFED480;
+			remoteInfo = "Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire";
+		};
+		E3AD55423732EDA1102D0CDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7350E3264ED5778254A441A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 020D61F44F6EAEC73C300898;
+			remoteInfo = "Pods-QULQuestionnaire-iOS_Example-RMStepsController";
+		};
+		FBEF6ABC62C27C4E9E65ADD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7350E3264ED5778254A441A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 020D61F44F6EAEC73C300898;
+			remoteInfo = "Pods-QULQuestionnaire-iOS_Example-RMStepsController";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00CF5FDD2D4408C7AEC46F6A /* QULQuestionnaireTextViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = QULQuestionnaireTextViewController.m; sourceTree = "<group>"; };
+		017A996BCBC4C91A24E2D624 /* RMStepsController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RMStepsController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		026C2900BDE864FDD51F4940 /* radioOff.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = radioOff.png; sourceTree = "<group>"; };
+		041FA50C0A9ABFA2866CC615 /* RMStep.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RMStep.m; path = RMStepsController/RMStep.m; sourceTree = "<group>"; };
+		0499EC1EFAFEB1D6A68FCD5A /* Smiley_sad@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Smiley_sad@2x.png"; sourceTree = "<group>"; };
+		06737DD7E13C8A571D178B0D /* Smiley_happy_selected.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = Smiley_happy_selected.png; sourceTree = "<group>"; };
+		07AADDACEB67B47B6C9D90C8 /* Pods-QULQuestionnaire-iOS_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QULQuestionnaire-iOS_Example-resources.sh"; sourceTree = "<group>"; };
+		08BC4B37AF76E02B169F8785 /* Pods-QULQuestionnaire-iOS_Example-RMStepsController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QULQuestionnaire-iOS_Example-RMStepsController-Private.xcconfig"; sourceTree = "<group>"; };
+		0C4BCC0F83075487B03B7355 /* QULQuestionnaireViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QULQuestionnaireViewController.h; sourceTree = "<group>"; };
+		0E187F2B45EAD7234C5F8CD6 /* QULQuestionnaire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QULQuestionnaire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1119BD51F23E6AA94AA3822E /* Smiley_ok_selected@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Smiley_ok_selected@2x.png"; sourceTree = "<group>"; };
+		1231332F808BD7C71BAA016A /* Smiley_very_happy_selected@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Smiley_very_happy_selected@2x.png"; sourceTree = "<group>"; };
+		19C9625F959FB31D9611A223 /* Smiley_sad_selected@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Smiley_sad_selected@2x.png"; sourceTree = "<group>"; };
+		1B4EEE216D3AC1FE054F77F0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C6E393CE426A20B69C540E8 /* RMStepsController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RMStepsController.m; path = RMStepsController/RMStepsController.m; sourceTree = "<group>"; };
+		1F75FBDFB0EBEC647F9BE896 /* Pods-QULQuestionnaire-iOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QULQuestionnaire-iOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		2017099358B8B736213E0801 /* QULQuestionnaireSortableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QULQuestionnaireSortableViewController.h; sourceTree = "<group>"; };
+		24221625C7D4D0B701E21759 /* QULQuestionnaireInstructionViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = QULQuestionnaireInstructionViewController.m; sourceTree = "<group>"; };
+		24DD926D71CA9601B700A2FB /* Pods-QULQuestionnaire-iOS_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QULQuestionnaire-iOS_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		286F6B72B71F04FBFFB3A74A /* Smiley_very_happy@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Smiley_very_happy@3x.png"; sourceTree = "<group>"; };
+		29644DEE673B0807F15201E6 /* Smiley_very_sad@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Smiley_very_sad@3x.png"; sourceTree = "<group>"; };
+		2DB3083FC6E27041965B0A18 /* Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire-dummy.m"; sourceTree = "<group>"; };
+		2F4BB32D13B32BFF4887F0BA /* QULQuestionnaireDecreaseIncrease@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "QULQuestionnaireDecreaseIncrease@2x.png"; sourceTree = "<group>"; };
+		3018F7363DFF22DF1FF3401A /* QULQuestionnaireDecreaseIncrease.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = QULQuestionnaireDecreaseIncrease.png; sourceTree = "<group>"; };
+		34D41EE55184C7D8B309F278 /* Smiley_very_sad_selected.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = Smiley_very_sad_selected.png; sourceTree = "<group>"; };
+		392D7FB0CB7099C02BBFFEF9 /* Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire-prefix.pch"; sourceTree = "<group>"; };
+		3A7638BFDE15F62461092D6C /* Pods-QULQuestionnaire-iOS_Example-RMStepsController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QULQuestionnaire-iOS_Example-RMStepsController-dummy.m"; sourceTree = "<group>"; };
+		3B93C99768B52F4570231A4F /* QULQuestionnaireSortableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = QULQuestionnaireSortableViewController.m; sourceTree = "<group>"; };
+		43C40218EAA3364AB6880D32 /* Pods-QULQuestionnaire-iOS_Example-RMStepsController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QULQuestionnaire-iOS_Example-RMStepsController.xcconfig"; sourceTree = "<group>"; };
+		43E130CABA50DC8518A2D6E7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		465ACF836800097CC063A6C1 /* Pods-QULQuestionnaire-iOS_Example-RMStepsController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QULQuestionnaire-iOS_Example-RMStepsController-umbrella.h"; sourceTree = "<group>"; };
+		47570E1BE4A93D4F6513443B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		486F2171076C8397825F3C9A /* Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire-umbrella.h"; sourceTree = "<group>"; };
+		4F72169D205B69F18860A621 /* Smiley_sad_selected.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = Smiley_sad_selected.png; sourceTree = "<group>"; };
+		51753FC05F0BF34E00159ABA /* Smiley_happy@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Smiley_happy@3x.png"; sourceTree = "<group>"; };
+		51E159B3AE93CD0755ECAD48 /* Smiley_happy_selected@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Smiley_happy_selected@2x.png"; sourceTree = "<group>"; };
+		5324F9274A1BE0D9C6E755CE /* QULQuestionnaireSingleSelectViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = QULQuestionnaireSingleSelectViewController.m; sourceTree = "<group>"; };
+		547ABDD3ECF3917F2DE2AE0E /* Smiley_very_sad@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Smiley_very_sad@2x.png"; sourceTree = "<group>"; };
+		57665888BDEFA15524FFEF7E /* Smiley_sad_selected@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Smiley_sad_selected@3x.png"; sourceTree = "<group>"; };
+		5DBD93301DA291E77C4B0D3A /* QULQuestionnaireInstructionViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QULQuestionnaireInstructionViewController.h; sourceTree = "<group>"; };
+		5DEFC48CB9D6E9E22738F022 /* Smiley_ok@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Smiley_ok@2x.png"; sourceTree = "<group>"; };
+		5EAEBF7CE9749B291D2A8DB1 /* Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire.modulemap"; sourceTree = "<group>"; };
+		5EFAC288565E967D475319AA /* Smiley_ok@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Smiley_ok@3x.png"; sourceTree = "<group>"; };
+		64CE8DB72871760F919F55EB /* Smiley_sad@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Smiley_sad@3x.png"; sourceTree = "<group>"; };
+		678CABCE86E534D30D80FA7C /* RMStepsController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RMStepsController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69ECEA949EB551FEE3B5839E /* QULQuestionnaireSliderViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = QULQuestionnaireSliderViewController.m; sourceTree = "<group>"; };
+		72421C1DB8DAC88C278464B1 /* QULQuestionnaireMultiSelectViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QULQuestionnaireMultiSelectViewController.h; sourceTree = "<group>"; };
+		72601CFAC0C448D09FB9DC38 /* Smiley_ok_selected.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = Smiley_ok_selected.png; sourceTree = "<group>"; };
+		75CCC6FAA954BFEA7A2D9B0B /* radioOn.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = radioOn.png; sourceTree = "<group>"; };
+		7763575A477BB9F3B6220494 /* Pods-QULQuestionnaire-iOS_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QULQuestionnaire-iOS_Example-umbrella.h"; sourceTree = "<group>"; };
+		777FB5A43119066292B7A23D /* Pods-QULQuestionnaire-iOS_Example-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QULQuestionnaire-iOS_Example-environment.h"; sourceTree = "<group>"; };
+		781B53B4CC9896CAB2979D39 /* radioOff@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "radioOff@2x.png"; sourceTree = "<group>"; };
+		795DE60F1FDC9316E56B3FF6 /* Smiley_ok.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = Smiley_ok.png; sourceTree = "<group>"; };
+		79EEFD6CA8DD0EF56877E578 /* Smiley_very_happy_selected.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = Smiley_very_happy_selected.png; sourceTree = "<group>"; };
+		7C4511A597A1695396844D18 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7D9B7A94B72480B6D051AE19 /* QULQuestionnaireViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = QULQuestionnaireViewController.m; sourceTree = "<group>"; };
+		808AADBA0DBC3CCD925B34D3 /* RMStep.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RMStep.h; path = RMStepsController/RMStep.h; sourceTree = "<group>"; };
+		80E71A693A76BAD6ED0F5229 /* Pods-QULQuestionnaire-iOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QULQuestionnaire-iOS_Example.release.xcconfig"; sourceTree = "<group>"; };
+		861CE6652D757761C7DF7F52 /* Pods-QULQuestionnaire-iOS_Example-RMStepsController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-QULQuestionnaire-iOS_Example-RMStepsController.modulemap"; sourceTree = "<group>"; };
+		86F992F372E22788BAE9077A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87130B69AEC94B114B9AD8B5 /* QULQuestionnaireSingleSelectViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QULQuestionnaireSingleSelectViewController.h; sourceTree = "<group>"; };
+		8806AB30143F87BF1A234DB2 /* Pods-QULQuestionnaire-iOS_Example-RMStepsController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QULQuestionnaire-iOS_Example-RMStepsController-prefix.pch"; sourceTree = "<group>"; };
+		931B9740498B291882DF45BC /* Smiley_happy.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = Smiley_happy.png; sourceTree = "<group>"; };
+		932EE4D5CC9FF503B54FBFA4 /* QULQuestionnaireSmileyViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QULQuestionnaireSmileyViewController.h; sourceTree = "<group>"; };
+		9C34C184A451C3D7A708C31E /* Smiley_very_happy.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = Smiley_very_happy.png; sourceTree = "<group>"; };
+		A2B2A9140238F5AA17557278 /* NSMutableArray+Shuffle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Shuffle.m"; sourceTree = "<group>"; };
+		A6394FE5BBAEED8F9A46EFD5 /* NSMutableArray+Shuffle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Shuffle.h"; sourceTree = "<group>"; };
+		A945E1456C340E5FC7D770F9 /* Smiley_very_sad.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = Smiley_very_sad.png; sourceTree = "<group>"; };
+		AC68AE922E2FDE2A43C03FB2 /* QULQuestionnaireSliderViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QULQuestionnaireSliderViewController.h; sourceTree = "<group>"; };
+		B6AABB8F7753496A55EDF1E9 /* Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire-Private.xcconfig"; sourceTree = "<group>"; };
+		B7285E59A0D2023F3110B526 /* QULQuestionnaireDecreaseIncrease@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "QULQuestionnaireDecreaseIncrease@3x.png"; sourceTree = "<group>"; };
+		BB9B0C11E0C7631A5FAA4087 /* Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire.xcconfig"; sourceTree = "<group>"; };
+		BE31B5070F6E84AD6C7BF0B8 /* QULQuestionnaireTextViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QULQuestionnaireTextViewController.h; sourceTree = "<group>"; };
+		BEBF5510E9D5F149168BE391 /* RMStepsBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RMStepsBar.m; path = RMStepsController/RMStepsBar.m; sourceTree = "<group>"; };
+		CAE3F3679E196716B5EEF718 /* RMStepsController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RMStepsController.h; path = RMStepsController/RMStepsController.h; sourceTree = "<group>"; };
+		CF5B707D6A305E4B19D6BE9C /* Pods_QULQuestionnaire_iOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QULQuestionnaire_iOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4A261C2661C79A48AE2180C /* Smiley_very_sad_selected@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Smiley_very_sad_selected@2x.png"; sourceTree = "<group>"; };
+		D72D9930FB8B55F02E6F50A8 /* Pods-QULQuestionnaire-iOS_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QULQuestionnaire-iOS_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		D8074C41ED97C9F50C84CD00 /* radioOn@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "radioOn@2x.png"; sourceTree = "<group>"; };
+		D8B977DA48F439160634A804 /* Smiley_very_happy@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Smiley_very_happy@2x.png"; sourceTree = "<group>"; };
+		D9E95F97A857EE0025962BD2 /* Smiley_happy_selected@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Smiley_happy_selected@3x.png"; sourceTree = "<group>"; };
+		DACC84CE1C702F31D3DAAB2C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DBC227B24E3C353C85533E2E /* Pods-QULQuestionnaire-iOS_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QULQuestionnaire-iOS_Example-dummy.m"; sourceTree = "<group>"; };
+		DCA25C30F84DCFDB5A05AAE0 /* Smiley_happy@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Smiley_happy@2x.png"; sourceTree = "<group>"; };
+		DF7ADBF8CB781F366C5FB822 /* Pods-QULQuestionnaire-iOS_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-QULQuestionnaire-iOS_Example.modulemap"; sourceTree = "<group>"; };
+		E70D13CA386349EB984F27AA /* QULQuestionnaireSmileyViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = QULQuestionnaireSmileyViewController.m; sourceTree = "<group>"; };
+		E7E27D86992D5E3811BFC3AC /* QULQuestionnaireMultiSelectViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = QULQuestionnaireMultiSelectViewController.m; sourceTree = "<group>"; };
+		EAF6130363AB515DFB4C9E1E /* QULQuestionnaire.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QULQuestionnaire.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECADFD5DB40939C0FF332008 /* RMStepsBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RMStepsBar.h; path = RMStepsController/RMStepsBar.h; sourceTree = "<group>"; };
+		EED153DD0006C29A30A692D6 /* Pods-QULQuestionnaire-iOS_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QULQuestionnaire-iOS_Example-frameworks.sh"; sourceTree = "<group>"; };
+		EED7EF6D76084E30F8E4F3CC /* Smiley_very_happy_selected@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Smiley_very_happy_selected@3x.png"; sourceTree = "<group>"; };
+		F57A72AF56F7139293CFCECD /* Smiley_very_sad_selected@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Smiley_very_sad_selected@3x.png"; sourceTree = "<group>"; };
+		F58E39B000DCE4AD1C8B5629 /* Smiley_sad.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = Smiley_sad.png; sourceTree = "<group>"; };
+		FC7DBAB6DD4B1DC1F9F25337 /* Smiley_ok_selected@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Smiley_ok_selected@3x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0CAEA03A14D91F33749A9646 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B61FBC5CF7CDE6496A0CCE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31EBBBAC9D96054F4AF8B65E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7680FA0731134C0B77CD9F22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DE1F4B1567BCC4AC449CC37 /* Foundation.framework in Frameworks */,
+				5C18B671F50787716455921A /* RMStepsController.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA94FB5564CE3EDC8FA4B48F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE9BB2B74A406A00F06194D6 /* Foundation.framework in Frameworks */,
+				003EB2CE9400264CA07AF753 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02191DC1573F0CDB05F2487B = {
+			isa = PBXGroup;
+			children = (
+				7C4511A597A1695396844D18 /* Podfile */,
+				DB2DDA5D5E30F1A61D469BB6 /* Development Pods */,
+				97F271DB290F0314B1ADD4C3 /* Frameworks */,
+				D9CCD18B16207CF07F505978 /* Pods */,
+				1040EB8E0A407215C4AA756E /* Products */,
+				48510AE6A640074236139C84 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		048D443A17337BE6819DA667 /* Pods-QULQuestionnaire-iOS_Example */ = {
+			isa = PBXGroup;
+			children = (
+				43E130CABA50DC8518A2D6E7 /* Info.plist */,
+				DF7ADBF8CB781F366C5FB822 /* Pods-QULQuestionnaire-iOS_Example.modulemap */,
+				24DD926D71CA9601B700A2FB /* Pods-QULQuestionnaire-iOS_Example-acknowledgements.markdown */,
+				D72D9930FB8B55F02E6F50A8 /* Pods-QULQuestionnaire-iOS_Example-acknowledgements.plist */,
+				DBC227B24E3C353C85533E2E /* Pods-QULQuestionnaire-iOS_Example-dummy.m */,
+				777FB5A43119066292B7A23D /* Pods-QULQuestionnaire-iOS_Example-environment.h */,
+				EED153DD0006C29A30A692D6 /* Pods-QULQuestionnaire-iOS_Example-frameworks.sh */,
+				07AADDACEB67B47B6C9D90C8 /* Pods-QULQuestionnaire-iOS_Example-resources.sh */,
+				7763575A477BB9F3B6220494 /* Pods-QULQuestionnaire-iOS_Example-umbrella.h */,
+				1F75FBDFB0EBEC647F9BE896 /* Pods-QULQuestionnaire-iOS_Example.debug.xcconfig */,
+				80E71A693A76BAD6ED0F5229 /* Pods-QULQuestionnaire-iOS_Example.release.xcconfig */,
+			);
+			name = "Pods-QULQuestionnaire-iOS_Example";
+			path = "Target Support Files/Pods-QULQuestionnaire-iOS_Example";
+			sourceTree = "<group>";
+		};
+		0F59F34D2F47F7783C727B5B /* SingleSelection */ = {
+			isa = PBXGroup;
+			children = (
+				87130B69AEC94B114B9AD8B5 /* QULQuestionnaireSingleSelectViewController.h */,
+				5324F9274A1BE0D9C6E755CE /* QULQuestionnaireSingleSelectViewController.m */,
+			);
+			path = SingleSelection;
+			sourceTree = "<group>";
+		};
+		1040EB8E0A407215C4AA756E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF5B707D6A305E4B19D6BE9C /* Pods_QULQuestionnaire_iOS_Example.framework */,
+				EAF6130363AB515DFB4C9E1E /* QULQuestionnaire.bundle */,
+				0E187F2B45EAD7234C5F8CD6 /* QULQuestionnaire.framework */,
+				017A996BCBC4C91A24E2D624 /* RMStepsController.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20824655F8C16E6BC93F9B21 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				86F992F372E22788BAE9077A /* Info.plist */,
+				5EAEBF7CE9749B291D2A8DB1 /* Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire.modulemap */,
+				BB9B0C11E0C7631A5FAA4087 /* Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire.xcconfig */,
+				B6AABB8F7753496A55EDF1E9 /* Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire-Private.xcconfig */,
+				2DB3083FC6E27041965B0A18 /* Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire-dummy.m */,
+				392D7FB0CB7099C02BBFFEF9 /* Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire-prefix.pch */,
+				486F2171076C8397825F3C9A /* Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire";
+			sourceTree = "<group>";
+		};
+		222F239C3873FD06FCF3D64C /* Smiley */ = {
+			isa = PBXGroup;
+			children = (
+				932EE4D5CC9FF503B54FBFA4 /* QULQuestionnaireSmileyViewController.h */,
+				E70D13CA386349EB984F27AA /* QULQuestionnaireSmileyViewController.m */,
+			);
+			path = Smiley;
+			sourceTree = "<group>";
+		};
+		29C50FC37B3DF8699646400E /* QULQuestionnaire.xcassets */ = {
+			isa = PBXGroup;
+			children = (
+				3233276072784D1AD7E16C14 /* IncreaseDecrease.imageset */,
+				6FCD5627A93424567B2B0F65 /* Radio */,
+				72080FC7A7B4A0E00ECB2EA3 /* Smileys */,
+			);
+			path = QULQuestionnaire.xcassets;
+			sourceTree = "<group>";
+		};
+		29FDC79F47963F2BA5B9A8D9 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				3D9AE60708EBECD4CB97AE2C /* Assets */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		31BE63AF6DE353D76F47AD9D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B4EEE216D3AC1FE054F77F0 /* Info.plist */,
+				861CE6652D757761C7DF7F52 /* Pods-QULQuestionnaire-iOS_Example-RMStepsController.modulemap */,
+				43C40218EAA3364AB6880D32 /* Pods-QULQuestionnaire-iOS_Example-RMStepsController.xcconfig */,
+				08BC4B37AF76E02B169F8785 /* Pods-QULQuestionnaire-iOS_Example-RMStepsController-Private.xcconfig */,
+				3A7638BFDE15F62461092D6C /* Pods-QULQuestionnaire-iOS_Example-RMStepsController-dummy.m */,
+				8806AB30143F87BF1A234DB2 /* Pods-QULQuestionnaire-iOS_Example-RMStepsController-prefix.pch */,
+				465ACF836800097CC063A6C1 /* Pods-QULQuestionnaire-iOS_Example-RMStepsController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-QULQuestionnaire-iOS_Example-RMStepsController";
+			sourceTree = "<group>";
+		};
+		3233276072784D1AD7E16C14 /* IncreaseDecrease.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				3018F7363DFF22DF1FF3401A /* QULQuestionnaireDecreaseIncrease.png */,
+				2F4BB32D13B32BFF4887F0BA /* QULQuestionnaireDecreaseIncrease@2x.png */,
+				B7285E59A0D2023F3110B526 /* QULQuestionnaireDecreaseIncrease@3x.png */,
+			);
+			path = IncreaseDecrease.imageset;
+			sourceTree = "<group>";
+		};
+		348844BF11CDCDA85B59B9A4 /* Slider */ = {
+			isa = PBXGroup;
+			children = (
+				AC68AE922E2FDE2A43C03FB2 /* QULQuestionnaireSliderViewController.h */,
+				69ECEA949EB551FEE3B5839E /* QULQuestionnaireSliderViewController.m */,
+			);
+			path = Slider;
+			sourceTree = "<group>";
+		};
+		35C3D11B7932FC60D560DC3F /* Instruction */ = {
+			isa = PBXGroup;
+			children = (
+				5DBD93301DA291E77C4B0D3A /* QULQuestionnaireInstructionViewController.h */,
+				24221625C7D4D0B701E21759 /* QULQuestionnaireInstructionViewController.m */,
+			);
+			path = Instruction;
+			sourceTree = "<group>";
+		};
+		3D9AE60708EBECD4CB97AE2C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				29C50FC37B3DF8699646400E /* QULQuestionnaire.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		44BBC7993BB77EF09E1E850A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				29FDC79F47963F2BA5B9A8D9 /* Pod */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		48510AE6A640074236139C84 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				048D443A17337BE6819DA667 /* Pods-QULQuestionnaire-iOS_Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4D823CC842020DFD703A6903 /* QULQuestionnaireSmileyOKSelected.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				72601CFAC0C448D09FB9DC38 /* Smiley_ok_selected.png */,
+				1119BD51F23E6AA94AA3822E /* Smiley_ok_selected@2x.png */,
+				FC7DBAB6DD4B1DC1F9F25337 /* Smiley_ok_selected@3x.png */,
+			);
+			path = QULQuestionnaireSmileyOKSelected.imageset;
+			sourceTree = "<group>";
+		};
+		6862C4C39CBBF2A87F7E3AAF /* RMStepsController */ = {
+			isa = PBXGroup;
+			children = (
+				808AADBA0DBC3CCD925B34D3 /* RMStep.h */,
+				041FA50C0A9ABFA2866CC615 /* RMStep.m */,
+				ECADFD5DB40939C0FF332008 /* RMStepsBar.h */,
+				BEBF5510E9D5F149168BE391 /* RMStepsBar.m */,
+				CAE3F3679E196716B5EEF718 /* RMStepsController.h */,
+				1C6E393CE426A20B69C540E8 /* RMStepsController.m */,
+				31BE63AF6DE353D76F47AD9D /* Support Files */,
+			);
+			path = RMStepsController;
+			sourceTree = "<group>";
+		};
+		6FCD5627A93424567B2B0F65 /* Radio */ = {
+			isa = PBXGroup;
+			children = (
+				8FAC7C6D58CDBC5C5B96FBF9 /* QULQuestionnaireRadioOff.imageset */,
+				CAAE5ACB4A660F6BE74E05C7 /* QULQuestionnaireRadioOn.imageset */,
+			);
+			path = Radio;
+			sourceTree = "<group>";
+		};
+		72080FC7A7B4A0E00ECB2EA3 /* Smileys */ = {
+			isa = PBXGroup;
+			children = (
+				876F7CF7A99202B9B1760FB0 /* QULQuestionnaireSmileyHappy.imageset */,
+				E674922D3A01D988408923BA /* QULQuestionnaireSmileyHappySelected.imageset */,
+				E51D67CB9F4F7F791A03944C /* QULQuestionnaireSmileyOK.imageset */,
+				4D823CC842020DFD703A6903 /* QULQuestionnaireSmileyOKSelected.imageset */,
+				72D4891FDAF21AD1960FA9F9 /* QULQuestionnaireSmileySad.imageset */,
+				86767B3E4AD6DED52652AF79 /* QULQuestionnaireSmileySadSelected.imageset */,
+				D62672F703E602AB13D3B5F3 /* QULQuestionnaireSmileyVeryHappy.imageset */,
+				BA2F5FDA6B29AB897112F785 /* QULQuestionnaireSmileyVeryHappySelected.imageset */,
+				BB44D14D8B0C922F1C88A186 /* QULQuestionnaireSmileyVerySad.imageset */,
+				DDBF75EB8EFD34D265BBFE25 /* QULQuestionnaireSmileyVerySadSelected.imageset */,
+			);
+			path = Smileys;
+			sourceTree = "<group>";
+		};
+		72D4891FDAF21AD1960FA9F9 /* QULQuestionnaireSmileySad.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				F58E39B000DCE4AD1C8B5629 /* Smiley_sad.png */,
+				0499EC1EFAFEB1D6A68FCD5A /* Smiley_sad@2x.png */,
+				64CE8DB72871760F919F55EB /* Smiley_sad@3x.png */,
+			);
+			path = QULQuestionnaireSmileySad.imageset;
+			sourceTree = "<group>";
+		};
+		771C5C17D13FCA0DDFA21BE9 /* Sortable */ = {
+			isa = PBXGroup;
+			children = (
+				2017099358B8B736213E0801 /* QULQuestionnaireSortableViewController.h */,
+				3B93C99768B52F4570231A4F /* QULQuestionnaireSortableViewController.m */,
+			);
+			path = Sortable;
+			sourceTree = "<group>";
+		};
+		790CD487572D8934C1C85C5F /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				BE31B5070F6E84AD6C7BF0B8 /* QULQuestionnaireTextViewController.h */,
+				00CF5FDD2D4408C7AEC46F6A /* QULQuestionnaireTextViewController.m */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
+		7A96A3FED7364BBB9C37FA33 /* MultipleSelection */ = {
+			isa = PBXGroup;
+			children = (
+				72421C1DB8DAC88C278464B1 /* QULQuestionnaireMultiSelectViewController.h */,
+				E7E27D86992D5E3811BFC3AC /* QULQuestionnaireMultiSelectViewController.m */,
+			);
+			path = MultipleSelection;
+			sourceTree = "<group>";
+		};
+		86767B3E4AD6DED52652AF79 /* QULQuestionnaireSmileySadSelected.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				4F72169D205B69F18860A621 /* Smiley_sad_selected.png */,
+				19C9625F959FB31D9611A223 /* Smiley_sad_selected@2x.png */,
+				57665888BDEFA15524FFEF7E /* Smiley_sad_selected@3x.png */,
+			);
+			path = QULQuestionnaireSmileySadSelected.imageset;
+			sourceTree = "<group>";
+		};
+		876F7CF7A99202B9B1760FB0 /* QULQuestionnaireSmileyHappy.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				931B9740498B291882DF45BC /* Smiley_happy.png */,
+				DCA25C30F84DCFDB5A05AAE0 /* Smiley_happy@2x.png */,
+				51753FC05F0BF34E00159ABA /* Smiley_happy@3x.png */,
+			);
+			path = QULQuestionnaireSmileyHappy.imageset;
+			sourceTree = "<group>";
+		};
+		8FAC7C6D58CDBC5C5B96FBF9 /* QULQuestionnaireRadioOff.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				026C2900BDE864FDD51F4940 /* radioOff.png */,
+				781B53B4CC9896CAB2979D39 /* radioOff@2x.png */,
+			);
+			path = QULQuestionnaireRadioOff.imageset;
+			sourceTree = "<group>";
+		};
+		97F271DB290F0314B1ADD4C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				678CABCE86E534D30D80FA7C /* RMStepsController.framework */,
+				BFD138A624175671E593F19D /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A59E2D35D57D7F9B52458508 /* QULQuestionnaire */ = {
+			isa = PBXGroup;
+			children = (
+				D2AEF846686DC57B2A211C6B /* Pod */,
+				44BBC7993BB77EF09E1E850A /* Resources */,
+				20824655F8C16E6BC93F9B21 /* Support Files */,
+			);
+			name = QULQuestionnaire;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		A9C7711A96C04FACC954DFA8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A6394FE5BBAEED8F9A46EFD5 /* NSMutableArray+Shuffle.h */,
+				A2B2A9140238F5AA17557278 /* NSMutableArray+Shuffle.m */,
+				0C4BCC0F83075487B03B7355 /* QULQuestionnaireViewController.h */,
+				7D9B7A94B72480B6D051AE19 /* QULQuestionnaireViewController.m */,
+				35C3D11B7932FC60D560DC3F /* Instruction */,
+				7A96A3FED7364BBB9C37FA33 /* MultipleSelection */,
+				0F59F34D2F47F7783C727B5B /* SingleSelection */,
+				348844BF11CDCDA85B59B9A4 /* Slider */,
+				222F239C3873FD06FCF3D64C /* Smiley */,
+				771C5C17D13FCA0DDFA21BE9 /* Sortable */,
+				790CD487572D8934C1C85C5F /* Text */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BA2F5FDA6B29AB897112F785 /* QULQuestionnaireSmileyVeryHappySelected.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				79EEFD6CA8DD0EF56877E578 /* Smiley_very_happy_selected.png */,
+				1231332F808BD7C71BAA016A /* Smiley_very_happy_selected@2x.png */,
+				EED7EF6D76084E30F8E4F3CC /* Smiley_very_happy_selected@3x.png */,
+			);
+			path = QULQuestionnaireSmileyVeryHappySelected.imageset;
+			sourceTree = "<group>";
+		};
+		BB44D14D8B0C922F1C88A186 /* QULQuestionnaireSmileyVerySad.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				A945E1456C340E5FC7D770F9 /* Smiley_very_sad.png */,
+				547ABDD3ECF3917F2DE2AE0E /* Smiley_very_sad@2x.png */,
+				29644DEE673B0807F15201E6 /* Smiley_very_sad@3x.png */,
+			);
+			path = QULQuestionnaireSmileyVerySad.imageset;
+			sourceTree = "<group>";
+		};
+		BFD138A624175671E593F19D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				DACC84CE1C702F31D3DAAB2C /* Foundation.framework */,
+				47570E1BE4A93D4F6513443B /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CAAE5ACB4A660F6BE74E05C7 /* QULQuestionnaireRadioOn.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				75CCC6FAA954BFEA7A2D9B0B /* radioOn.png */,
+				D8074C41ED97C9F50C84CD00 /* radioOn@2x.png */,
+			);
+			path = QULQuestionnaireRadioOn.imageset;
+			sourceTree = "<group>";
+		};
+		D2AEF846686DC57B2A211C6B /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				A9C7711A96C04FACC954DFA8 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		D62672F703E602AB13D3B5F3 /* QULQuestionnaireSmileyVeryHappy.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				9C34C184A451C3D7A708C31E /* Smiley_very_happy.png */,
+				D8B977DA48F439160634A804 /* Smiley_very_happy@2x.png */,
+				286F6B72B71F04FBFFB3A74A /* Smiley_very_happy@3x.png */,
+			);
+			path = QULQuestionnaireSmileyVeryHappy.imageset;
+			sourceTree = "<group>";
+		};
+		D9CCD18B16207CF07F505978 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6862C4C39CBBF2A87F7E3AAF /* RMStepsController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB2DDA5D5E30F1A61D469BB6 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A59E2D35D57D7F9B52458508 /* QULQuestionnaire */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		DDBF75EB8EFD34D265BBFE25 /* QULQuestionnaireSmileyVerySadSelected.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				34D41EE55184C7D8B309F278 /* Smiley_very_sad_selected.png */,
+				D4A261C2661C79A48AE2180C /* Smiley_very_sad_selected@2x.png */,
+				F57A72AF56F7139293CFCECD /* Smiley_very_sad_selected@3x.png */,
+			);
+			path = QULQuestionnaireSmileyVerySadSelected.imageset;
+			sourceTree = "<group>";
+		};
+		E51D67CB9F4F7F791A03944C /* QULQuestionnaireSmileyOK.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				795DE60F1FDC9316E56B3FF6 /* Smiley_ok.png */,
+				5DEFC48CB9D6E9E22738F022 /* Smiley_ok@2x.png */,
+				5EFAC288565E967D475319AA /* Smiley_ok@3x.png */,
+			);
+			path = QULQuestionnaireSmileyOK.imageset;
+			sourceTree = "<group>";
+		};
+		E674922D3A01D988408923BA /* QULQuestionnaireSmileyHappySelected.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				06737DD7E13C8A571D178B0D /* Smiley_happy_selected.png */,
+				51E159B3AE93CD0755ECAD48 /* Smiley_happy_selected@2x.png */,
+				D9E95F97A857EE0025962BD2 /* Smiley_happy_selected@3x.png */,
+			);
+			path = QULQuestionnaireSmileyHappySelected.imageset;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		415A3CEBD97358E2938C6412 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAFA5075E5BFE3CBB5144D4C /* NSMutableArray+Shuffle.h in Headers */,
+				B5048136DC430A64ACBBCDD8 /* Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire-umbrella.h in Headers */,
+				7E67542402B1EBEAFB12FBBF /* QULQuestionnaireInstructionViewController.h in Headers */,
+				F93486679DE01B2601288A2D /* QULQuestionnaireMultiSelectViewController.h in Headers */,
+				B109C1D8B786E3FB0189A218 /* QULQuestionnaireSingleSelectViewController.h in Headers */,
+				626687543D76EA385A655F56 /* QULQuestionnaireSliderViewController.h in Headers */,
+				E7CA51D48E6796F3518B6C44 /* QULQuestionnaireSmileyViewController.h in Headers */,
+				680C4870381FAAFED27F83EF /* QULQuestionnaireSortableViewController.h in Headers */,
+				411AA7A299F1070ACB199B0D /* QULQuestionnaireTextViewController.h in Headers */,
+				0EBB2AB913C39EDE58539457 /* QULQuestionnaireViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85950094544C7AAA5F299C41 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ED1DC16598FD8ECA9CAA286 /* Pods-QULQuestionnaire-iOS_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB508BCC98741093011CFECE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C0BB7051CF79D80D922A83B /* Pods-QULQuestionnaire-iOS_Example-RMStepsController-umbrella.h in Headers */,
+				859B3D2177ECE2A88B340E91 /* RMStep.h in Headers */,
+				3E9D6974A8E1E7C737A903F7 /* RMStepsBar.h in Headers */,
+				41C7D15E00A7479C91C9323D /* RMStepsController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		020D61F44F6EAEC73C300898 /* Pods-QULQuestionnaire-iOS_Example-RMStepsController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EE390759797DC5C1A15B4BF /* Build configuration list for PBXNativeTarget "Pods-QULQuestionnaire-iOS_Example-RMStepsController" */;
+			buildPhases = (
+				D7715F62B826BF621A5410A0 /* Sources */,
+				AA94FB5564CE3EDC8FA4B48F /* Frameworks */,
+				AB508BCC98741093011CFECE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-QULQuestionnaire-iOS_Example-RMStepsController";
+			productName = "Pods-QULQuestionnaire-iOS_Example-RMStepsController";
+			productReference = 017A996BCBC4C91A24E2D624 /* RMStepsController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		54EDA2B2508C7DA5BF3253B2 /* Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire-QULQuestionnaire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43C4F4B0A1C034A158C3386C /* Build configuration list for PBXNativeTarget "Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire-QULQuestionnaire" */;
+			buildPhases = (
+				3C9155FD739E4F9DA30FD3B8 /* Sources */,
+				0CAEA03A14D91F33749A9646 /* Frameworks */,
+				DE833825DE4596D3600CB579 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire-QULQuestionnaire";
+			productName = "Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire-QULQuestionnaire";
+			productReference = EAF6130363AB515DFB4C9E1E /* QULQuestionnaire.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		5EA6B1CF69AFC7030FFED480 /* Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43AF57D3E54BD8DCA97EAC15 /* Build configuration list for PBXNativeTarget "Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire" */;
+			buildPhases = (
+				22D2B7FB584FC83CDEE957F8 /* Sources */,
+				7680FA0731134C0B77CD9F22 /* Frameworks */,
+				2051C8240442394154CB1AA7 /* Resources */,
+				415A3CEBD97358E2938C6412 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				989DD515933846960EA295FD /* PBXTargetDependency */,
+				53CF3E34A790474450B5F0D0 /* PBXTargetDependency */,
+			);
+			name = "Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire";
+			productName = "Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire";
+			productReference = 0E187F2B45EAD7234C5F8CD6 /* QULQuestionnaire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A14A59635219745A34B083D9 /* Pods-QULQuestionnaire-iOS_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E72351171899B948ABD52AFD /* Build configuration list for PBXNativeTarget "Pods-QULQuestionnaire-iOS_Example" */;
+			buildPhases = (
+				EB6BBD1A99319795FC8D9767 /* Sources */,
+				2B61FBC5CF7CDE6496A0CCE5 /* Frameworks */,
+				85950094544C7AAA5F299C41 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76026C7889739EC0FD1DA4BF /* PBXTargetDependency */,
+				56E3B22A7D5AF32CE50DEAF2 /* PBXTargetDependency */,
+			);
+			name = "Pods-QULQuestionnaire-iOS_Example";
+			productName = "Pods-QULQuestionnaire-iOS_Example";
+			productReference = CF5B707D6A305E4B19D6BE9C /* Pods_QULQuestionnaire_iOS_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7350E3264ED5778254A441A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = 2EC950A70EDC797FDA7C9A42 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 02191DC1573F0CDB05F2487B;
+			productRefGroup = 1040EB8E0A407215C4AA756E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A14A59635219745A34B083D9 /* Pods-QULQuestionnaire-iOS_Example */,
+				5EA6B1CF69AFC7030FFED480 /* Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire */,
+				54EDA2B2508C7DA5BF3253B2 /* Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire-QULQuestionnaire */,
+				020D61F44F6EAEC73C300898 /* Pods-QULQuestionnaire-iOS_Example-RMStepsController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2051C8240442394154CB1AA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1897B3E859BBE9EC27ADA036 /* QULQuestionnaire.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE833825DE4596D3600CB579 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				715924527C19302062379327 /* QULQuestionnaireDecreaseIncrease.png in Resources */,
+				1D803A74D0361D4B5C23FF82 /* QULQuestionnaireDecreaseIncrease@2x.png in Resources */,
+				E8327032DC9EC31739EF067F /* QULQuestionnaireDecreaseIncrease@3x.png in Resources */,
+				7233D818F31D90C1F886666F /* Smiley_happy.png in Resources */,
+				6B86517D7ED67074C8741A8D /* Smiley_happy@2x.png in Resources */,
+				2F6E1DD96D4BA49679D42DBB /* Smiley_happy@3x.png in Resources */,
+				A09CC9575E3BCFBA6F05DAB2 /* Smiley_happy_selected.png in Resources */,
+				3217653B75C24CF6FFAD099C /* Smiley_happy_selected@2x.png in Resources */,
+				C0DEF666B7CFFAFDF54BA10B /* Smiley_happy_selected@3x.png in Resources */,
+				2B1779D7FD26F2938F265246 /* Smiley_ok.png in Resources */,
+				2825D9746B3757C1B2E9F882 /* Smiley_ok@2x.png in Resources */,
+				818B8FFED240DB29E75D4078 /* Smiley_ok@3x.png in Resources */,
+				05263BF336DA2D77FB16998F /* Smiley_ok_selected.png in Resources */,
+				32FCBFCE7B9F66772F67049D /* Smiley_ok_selected@2x.png in Resources */,
+				F317D2CDCA97F08A8B26ACAA /* Smiley_ok_selected@3x.png in Resources */,
+				8C43D76F9F42C0978C288544 /* Smiley_sad.png in Resources */,
+				2F46113A88E9E228BBF4A93E /* Smiley_sad@2x.png in Resources */,
+				B58A8A9D1BE0BCCDC9835A09 /* Smiley_sad@3x.png in Resources */,
+				BA6F6D420D4B4C0C294A0FC1 /* Smiley_sad_selected.png in Resources */,
+				EF0D2593795E8AFE2B1E8831 /* Smiley_sad_selected@2x.png in Resources */,
+				9F44109E788B634465D9F8BF /* Smiley_sad_selected@3x.png in Resources */,
+				42001C8D4081AFB6971D8A0F /* Smiley_very_happy.png in Resources */,
+				7A3AE35F4475A4F035983AAC /* Smiley_very_happy@2x.png in Resources */,
+				EEB0F1D7AA7D02355ECFBF8A /* Smiley_very_happy@3x.png in Resources */,
+				BBB263B04D17F73748A7E4B8 /* Smiley_very_happy_selected.png in Resources */,
+				A83378C8773636F785E87856 /* Smiley_very_happy_selected@2x.png in Resources */,
+				C4BB95F36D89C62EBF355277 /* Smiley_very_happy_selected@3x.png in Resources */,
+				4EDCF0CDCB972EF4133D1524 /* Smiley_very_sad.png in Resources */,
+				F70DABF44849D4907DC58640 /* Smiley_very_sad@2x.png in Resources */,
+				4D7A95015DC38D120C1A0F42 /* Smiley_very_sad@3x.png in Resources */,
+				4392F346399E23401FD13F3B /* Smiley_very_sad_selected.png in Resources */,
+				9E96B7BE8A1676764DFADEB4 /* Smiley_very_sad_selected@2x.png in Resources */,
+				A2A7AE127EFC622B4D50DBD9 /* Smiley_very_sad_selected@3x.png in Resources */,
+				476187DE3660D1362F11CD12 /* radioOff.png in Resources */,
+				23765A6A7FC14697E945ED85 /* radioOff@2x.png in Resources */,
+				0595445E99B80A7DF0B80E1B /* radioOn.png in Resources */,
+				51492C1A09AD8FCCF7989D42 /* radioOn@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22D2B7FB584FC83CDEE957F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A50B12CFDF2B4C2DDC362832 /* NSMutableArray+Shuffle.m in Sources */,
+				6D73F1C467675DC9A0930C7C /* Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire-dummy.m in Sources */,
+				2DB4677F6A8067ABA80B2820 /* QULQuestionnaireInstructionViewController.m in Sources */,
+				CB29BA256A0A7C9F39849284 /* QULQuestionnaireMultiSelectViewController.m in Sources */,
+				0228BEAED8B26C3E1729F3FD /* QULQuestionnaireSingleSelectViewController.m in Sources */,
+				21E17B383567A61749576537 /* QULQuestionnaireSliderViewController.m in Sources */,
+				0823265CF9909ACBB7F71C76 /* QULQuestionnaireSmileyViewController.m in Sources */,
+				DD016057B142FBD4BE292E7D /* QULQuestionnaireSortableViewController.m in Sources */,
+				0C63D62730394DB432E38EF9 /* QULQuestionnaireTextViewController.m in Sources */,
+				172A839BD9C8AC5BC28F0EFA /* QULQuestionnaireViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C9155FD739E4F9DA30FD3B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7715F62B826BF621A5410A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8833D0C23A706FC215E89405 /* Pods-QULQuestionnaire-iOS_Example-RMStepsController-dummy.m in Sources */,
+				38CE4943251309EC216C3301 /* RMStep.m in Sources */,
+				8FA68EA1625CB3ADA1931F18 /* RMStepsBar.m in Sources */,
+				FC537A18E8BD50BCDC3BAAB3 /* RMStepsController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB6BBD1A99319795FC8D9767 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBEB27B25F9BDE32D3FFB7CB /* Pods-QULQuestionnaire-iOS_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		53CF3E34A790474450B5F0D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-QULQuestionnaire-iOS_Example-RMStepsController";
+			target = 020D61F44F6EAEC73C300898 /* Pods-QULQuestionnaire-iOS_Example-RMStepsController */;
+			targetProxy = E3AD55423732EDA1102D0CDD /* PBXContainerItemProxy */;
+		};
+		56E3B22A7D5AF32CE50DEAF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-QULQuestionnaire-iOS_Example-RMStepsController";
+			target = 020D61F44F6EAEC73C300898 /* Pods-QULQuestionnaire-iOS_Example-RMStepsController */;
+			targetProxy = FBEF6ABC62C27C4E9E65ADD8 /* PBXContainerItemProxy */;
+		};
+		76026C7889739EC0FD1DA4BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire";
+			target = 5EA6B1CF69AFC7030FFED480 /* Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire */;
+			targetProxy = 841E736D5A36CAA4FCDF3243 /* PBXContainerItemProxy */;
+		};
+		989DD515933846960EA295FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire-QULQuestionnaire";
+			target = 54EDA2B2508C7DA5BF3253B2 /* Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire-QULQuestionnaire */;
+			targetProxy = 624998CDCE135223B18766A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		35679D6A1C38EA690F0A7182 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6AABB8F7753496A55EDF1E9 /* Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire/Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire/Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = QULQuestionnaire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6C7FAD61C61DD7407409E72C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F75FBDFB0EBEC647F9BE896 /* Pods-QULQuestionnaire-iOS_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-QULQuestionnaire-iOS_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-QULQuestionnaire-iOS_Example/Pods-QULQuestionnaire-iOS_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_QULQuestionnaire_iOS_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6EFE701D1B91AC2E71D3E022 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8B854AA39B3759594D2A8212 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08BC4B37AF76E02B169F8785 /* Pods-QULQuestionnaire-iOS_Example-RMStepsController-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-QULQuestionnaire-iOS_Example-RMStepsController/Pods-QULQuestionnaire-iOS_Example-RMStepsController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-QULQuestionnaire-iOS_Example-RMStepsController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-QULQuestionnaire-iOS_Example-RMStepsController/Pods-QULQuestionnaire-iOS_Example-RMStepsController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RMStepsController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9BB36215CE3B659092577E33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6AABB8F7753496A55EDF1E9 /* Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-QULQuestionnaire-iOS_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = QULQuestionnaire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		9E5A0809BF7F7611493166F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6AABB8F7753496A55EDF1E9 /* Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-QULQuestionnaire-iOS_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = QULQuestionnaire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		A87403A57A7AC63012B64BC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80E71A693A76BAD6ED0F5229 /* Pods-QULQuestionnaire-iOS_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-QULQuestionnaire-iOS_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-QULQuestionnaire-iOS_Example/Pods-QULQuestionnaire-iOS_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_QULQuestionnaire_iOS_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B12E6ED990EA7AFE9263DC8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6AABB8F7753496A55EDF1E9 /* Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire/Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire/Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = QULQuestionnaire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B9913BCAD1BDA16615E3055F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8119CC6A7A3C1F44639AF37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08BC4B37AF76E02B169F8785 /* Pods-QULQuestionnaire-iOS_Example-RMStepsController-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-QULQuestionnaire-iOS_Example-RMStepsController/Pods-QULQuestionnaire-iOS_Example-RMStepsController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-QULQuestionnaire-iOS_Example-RMStepsController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-QULQuestionnaire-iOS_Example-RMStepsController/Pods-QULQuestionnaire-iOS_Example-RMStepsController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RMStepsController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2EC950A70EDC797FDA7C9A42 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EFE701D1B91AC2E71D3E022 /* Debug */,
+				B9913BCAD1BDA16615E3055F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43AF57D3E54BD8DCA97EAC15 /* Build configuration list for PBXNativeTarget "Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35679D6A1C38EA690F0A7182 /* Debug */,
+				B12E6ED990EA7AFE9263DC8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43C4F4B0A1C034A158C3386C /* Build configuration list for PBXNativeTarget "Pods-QULQuestionnaire-iOS_Example-QULQuestionnaire-QULQuestionnaire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E5A0809BF7F7611493166F6 /* Debug */,
+				9BB36215CE3B659092577E33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EE390759797DC5C1A15B4BF /* Build configuration list for PBXNativeTarget "Pods-QULQuestionnaire-iOS_Example-RMStepsController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B854AA39B3759594D2A8212 /* Debug */,
+				D8119CC6A7A3C1F44639AF37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E72351171899B948ABD52AFD /* Build configuration list for PBXNativeTarget "Pods-QULQuestionnaire-iOS_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C7FAD61C61DD7407409E72C /* Debug */,
+				A87403A57A7AC63012B64BC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7350E3264ED5778254A441A5 /* Project object */;
+}

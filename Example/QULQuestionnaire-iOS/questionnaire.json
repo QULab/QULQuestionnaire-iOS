@@ -1,0 +1,162 @@
+ [
+  {
+  "key": "instruction1",
+  "type": "instruction",
+  "title": "Start",
+  "question": "Questionnaire",
+  "instruction": "Thanks for taking the questionnaire. We highly appreciate your feedback!\n\nThis questionnaire contains X questions and will take about 5 minutes of your time.",
+  },
+  {
+  "key": "smiley1",
+  "type": "smiley",
+  "title": "Smiley",
+  "question": "Overall, how satisfied are you with the customer service experience that you recieved from us?",
+  "required": true
+  },
+  {
+  "key": "radio1",
+  "type": "radio",
+  "title": "Radio vertical",
+  "orientation": 1,
+  "question": "During your most recent purchase, how did you contact us?",
+  "instruction": "Please select one option.",
+  "required": true,
+  "randomized": true,
+  "other": true,
+  "options": [
+              {
+              "key": "r1",
+              "value": "In Person"
+              },
+              {
+              "key": "r2",
+              "value": "By Telephone"
+              },
+              {
+              "key": "r3",
+              "value": "Via Internet",
+              "default": true
+              },
+              {
+              "key": "r4",
+              "value": "Through a dealer or retailer"
+              },
+              {
+              "key": "r5",
+              "value": "Other"
+              }
+              ]
+  },
+  {
+  "key": "multi1",
+  "type": "checkbox",
+  "title": "Checkbox multi",
+  "question": "Do you think we...",
+  "instruction": "Select up to two options that apply.",
+  "required": true,
+  "randomized": true,
+  "maxSelectable": 2,
+  "options": [
+              {
+              "key": "m1",
+              "value": "Quickly identified the problem"
+              },
+              {
+              "key": "m2",
+              "value": "Handle the query professionally",
+              "selected": true
+              },
+              {
+              "key": "m3",
+              "value": "Help you understand the cause and how to solve the problem"
+              },
+              {
+              "key": "m4",
+              "value": "Appear knowledgeable and competent about the subject"
+              }
+              ]
+  },
+  {
+  "key": "sortable1",
+  "type": "sortable",
+  "title": "Sortable",
+  "question": "What is your preferred way of being contacted through our sales service?",
+  "instruction": "Rank the options: the most preferred options is on the top of the list.",
+  "required": true,
+  "options": [
+              {
+              "key": "s1",
+              "value": "Phone"
+              },
+              {
+              "key": "s2",
+              "value": "E-Mail"
+              },
+              {
+              "key": "s3",
+              "value": "In Person"
+              },
+              {
+              "key": "s4",
+              "value": "Fax"
+              }
+              ]
+  },
+  {
+  "key": "slider1",
+  "type": "slider",
+  "title": "Slider",
+  "question": "How quickly did you get through to a sales person?",
+  "instruction": "Select minutes that you were in the line.",
+  "required": true,
+  "minValue": 0,
+  "maxValue": 10,
+  "minLabel": "0",
+  "maxLabel": "10",
+  "showSelectedValue": true,
+  "stepValue": 1
+  },
+  {
+  "key": "text1",
+  "type": "text",
+  "title": "Text",
+  "question": "If you were less than totally satisfied, what could have been done to serve you better?",
+  "placeholder": "",
+  "required": false
+  },
+  {
+  "key": "radio2",
+  "type": "radio",
+  "title": "Radio horizontal",
+  "orientation": 0,
+  "question": "I found suitable information to help me with my query.",
+  "instruction": "Please rate on a scale from 1 (strongly agree) to 5 (strongly disagree).",
+  "required": true,
+  "randomized": false,
+  "minLabel": "Min.",
+  "maxLabel": "Max.",
+  "decreaseIncreaseAccessory": true,
+  "options": [
+              {
+              "key": "rr1",
+              "value": "1"
+              },
+              {
+              "key": "rr2",
+              "value": "2"
+              },
+              {
+              "key": "rr3",
+              "value": "3"
+              },
+              {
+              "key": "rr4",
+              "value": "4"
+              },
+              {
+              "key": "rr5",
+              "value": "5"
+              }
+              ]
+  }
+  ]
