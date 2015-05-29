@@ -1,0 +1,6 @@
+language: objective-c
+xcode_workspace: Example/QULQuestionnaire-iOS.xcworkspace
+xcode_scheme: QULQuestionnaire-iOS-Example
+podfile: Example/Podfile
+script:
+  - xctool -workspace Example/QULQuestionnaire-iOS.xcworkspace -scheme 'QULQuestionnaire-iOS-Example' -sdk iphonesimulator build CODE_SIGNING_REQUIRED=NO
