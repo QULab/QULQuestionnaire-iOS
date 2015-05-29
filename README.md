@@ -37,8 +37,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
   ]
 }
 ```
-![Single selection vertical](Screenshots/SingleSelectionVertical.png)
-![Single selection horizontal](Screenshots/SingleSelectionHorizontal.png)
+<img src="Screenshots/SingleSelectionVertical.png" width="200" alt="Single selection vertical">
+<img src="Screenshots/SingleSelectionHorizontal.png" width="200" alt="Single selection horizontal">
 
 ###Overall rating (smiley scale)
 ```json
@@ -50,7 +50,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
   "required": BOOL
 }
 ```
-![Smiley](Screenshots/Smiley.png)
+<img src="Screenshots/Smiley.png" width="200" alt="Smiley">
 
 ###Multiple selection (checkbox)
 ```json
@@ -71,6 +71,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
     ]
 }
 ```
+<img src="Screenshots/MultipleSelection.png" width="200" alt="Multiple selection">
 
 ###Value from range (slider)
 ```json
@@ -88,7 +89,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
   "stepValue": INT // optional
 }
 ```
-![Slider](Screenshots/Slider.png)
+<img src="Screenshots/Slider.png" width="200" alt="Slider">
 
 ###Text
 ```json
@@ -102,7 +103,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
   "required": BOOL
 }
 ```
-![Single selection vertical](Screenshots/Text.png)
+<img src="Screenshots/Text.png" width="200" alt="Text">
 
 ###Ranking
 ```json
@@ -121,7 +122,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
   ]
 }
 ```
-![Ranking](Screenshots/Ranking.png)
+<img src="Screenshots/Ranking.png" width="200" alt="Ranking">
 
 #Installation
 
