@@ -1,6 +1,6 @@
 # QULQuestionnaire-iOS
 
-[![CI Status](http://img.shields.io/travis/QULab/QULQuestionnaire.svg?style=flat)](https://travis-ci.org/QULab/QULQuestionnaire)
+[![CI Status](http://img.shields.io/travis/QULab/QULQuestionnaire-iOS.svg?style=flat)](https://travis-ci.org/QULab/QULQuestionnaire-iOS)
 [![Version](https://img.shields.io/cocoapods/v/QULQuestionnaire.svg?style=flat)](http://cocoapods.org/pods/QULQuestionnaire)
 [![License](https://img.shields.io/cocoapods/l/QULQuestionnaire.svg?style=flat)](http://cocoapods.org/pods/QULQuestionnaire)
 [![Platform](https://img.shields.io/cocoapods/p/QULQuestionnaire.svg?style=flat)](http://cocoapods.org/pods/QULQuestionnaire)
