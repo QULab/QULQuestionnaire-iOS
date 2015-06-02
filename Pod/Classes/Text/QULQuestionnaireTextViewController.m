@@ -75,6 +75,7 @@
     textView.scrollEnabled = NO;
     textView.keyboardType = [self keyboardTypeForInput:self.questionnaireData[@"input"]];
     textView.text = self.questionnaireData[@"placeholder"];
+    textView.textColor = [UIColor lightGrayColor];
     textView.layer.backgroundColor = [[UIColor whiteColor] CGColor];
     textView.layer.borderColor = [[UIColor lightGrayColor] CGColor];
     textView.layer.borderWidth = 1.0;
@@ -168,9 +169,15 @@
 }
 
 - (void)proceed {
+    NSString *answer = @"";
+    if (![self.textView.text isEqualToString:self.questionnaireData[@"placeholder"]]) {
+        answer = self.questionnaireData[@"placeholder"];
+    }
+    
     NSDictionary *result = @{@"q": self.questionnaireData[@"key"],
-                             @"a": self.textView.text};
+                             @"a": answer};
     [self.stepsController.results[@"data"] addObject:result];
+    
     
     [self.stepsController showNextStep];
 }
