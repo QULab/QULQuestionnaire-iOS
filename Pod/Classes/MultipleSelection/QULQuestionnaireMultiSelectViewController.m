@@ -139,10 +139,10 @@
                                                            constant:0]];
     
     
-    NSString *radioOffPath = [resourceBundle pathForResource:@"radioOff"
+    NSString *radioOffPath = [resourceBundle pathForResource:@"checkboxOff"
                                                       ofType:@"png"];
     UIImage *radioOff = [UIImage imageWithContentsOfFile:radioOffPath];
-    NSString *radioOnPath = [resourceBundle pathForResource:@"radioOn"
+    NSString *radioOnPath = [resourceBundle pathForResource:@"checkboxOn"
                                                      ofType:@"png"];
     UIImage *radioOn = [UIImage imageWithContentsOfFile:radioOnPath];
     
