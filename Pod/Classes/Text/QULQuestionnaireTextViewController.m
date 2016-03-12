@@ -171,7 +171,7 @@
 - (void)proceed {
     NSString *answer = @"";
     if (![self.textView.text isEqualToString:self.questionnaireData[@"placeholder"]]) {
-        answer = self.questionnaireData[@"placeholder"];
+        answer = self.textView.text;
     }
     
     NSDictionary *result = @{@"q": self.questionnaireData[@"key"],
